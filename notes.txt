@@ -1,0 +1,8 @@
+colours:
+
+teal blue 33658a
+dark sky blue 86bbd8
+azurish white d3e6f0
+dark slate gray 2f4858
+saffrom f6ae2d
+giants orange f26419
