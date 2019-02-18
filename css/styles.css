@@ -20,7 +20,7 @@ a:visited {
 	color: inherit;
 }
 
-#nav-links a:hover {
+#nav-links a[href]:hover {
 	color: white;
 	border-left: 5px solid white;
 	transition: color 0.1s, border-width 0.1s;
@@ -45,9 +45,9 @@ li {
 	margin: 17px 0;
 }
 
-.active-page {
+#active-page {
 	border-left: 5px solid #33658a;
-	padding-left: 5px;
+	cursor: default;
 }
 
 #main-container {
@@ -63,7 +63,7 @@ main {
 }
 
 nav {
-	flex: 0 0 75px;
+	flex: 0 0 90px;
 	align-self: flex-start;
 	position: sticky;
 	top: 0;
@@ -141,17 +141,15 @@ hr {
 		margin-right: 10px;
 	}
 
-	#nav-links a:hover {
+	#nav-links a[href]:hover {
 		color: white;
 		border-bottom: 3px solid white;
 		border-left: 0;
 	}
 
-	.active-page {
+	#active-page {
 		border-bottom: 3px solid #33658a;
 		border-left: 0;
-		padding-left: 0px;
-		margin-right: 10px !important;
 	}
 
 	#nav-social {
