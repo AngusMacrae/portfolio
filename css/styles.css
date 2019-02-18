@@ -27,12 +27,11 @@ a:visited {
 }
 
 .fab {
-	transition: color 0.3s;
+	transition: color 0.2s;
 }
 
 .fab:hover {
 	color: white;
-	transition: color 0.1s;
 }
 
 h1,
@@ -100,18 +99,32 @@ hr {
 }
 */
 
+.portfolio-item > img {
+	display: block;
+}
+
+.portfolio-item button {
+	background-color: #33658a;
+	color: white;
+	border: none;
+	padding: 4px 8px;
+	transition: background-color 0.3s;
+}
+
+.portfolio-item button:hover {
+	background-color: #f6ae2d;
+	cursor: pointer;
+}
+
+.portfolio-item button:disabled {
+	background-color: grey;
+	cursor: inherit;
+}
+
 hr {
 	border: 0;
 	border-top: 1px solid #33658a;
 	margin: 40px auto;
-}
-
-.view-live-link {
-	font-size: 0.7em !important;
-}
-
-.view-live-link:hover {
-	color: red;
 }
 
 @media only screen and (max-width: 550px) {
