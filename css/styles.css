@@ -96,7 +96,7 @@ main {
 
 #about-me-overview {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 }
 
 #about-me-portrait {
@@ -106,6 +106,15 @@ main {
 
 #about-me-content {
 	padding-left: 10px;
+}
+
+#about-me-content p:first-of-type {
+	margin-top: 0;
+}
+
+#about-me-contact-me-button {
+	display: inline;
+	margin-left: 10px;
 }
 
 /*
@@ -121,7 +130,7 @@ hr {
 	display: block;
 }
 
-.portfolio-item button {
+button {
 	background-color: #33658a;
 	color: white;
 	border: none;
@@ -129,12 +138,12 @@ hr {
 	transition: background-color 0.3s;
 }
 
-.portfolio-item button:hover {
+button:hover {
 	background-color: #f6ae2d;
 	cursor: pointer;
 }
 
-.portfolio-item button:disabled {
+button:disabled {
 	background-color: grey;
 	cursor: inherit;
 }
