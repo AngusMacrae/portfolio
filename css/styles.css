@@ -44,6 +44,10 @@ li {
 	margin: 17px 0;
 }
 
+p {
+	line-height: 1.5em;
+}
+
 #active-page {
 	border-left: 5px solid #33658a;
 	cursor: default;
