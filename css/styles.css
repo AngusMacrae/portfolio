@@ -6,22 +6,33 @@ body {
 	background-color: #d3e6f0;
 }
 
-#side-nav-links a {
+#nav-links a {
 	padding-left: 5px;
 }
 
 a:link {
 	color: inherit;
 	text-decoration: none;
+	transition: color 0.3s, border-width 0.3s;
 }
 
 a:visited {
 	color: inherit;
 }
 
-#side-nav-links a:hover {
+#nav-links a:hover {
 	color: white;
-	border-left: 1px solid white;
+	border-left: 5px solid white;
+	transition: color 0.1s, border-width 0.1s;
+}
+
+.fab {
+	transition: color 0.3s;
+}
+
+.fab:hover {
+	color: white;
+	transition: color 0.1s;
 }
 
 h1,
@@ -35,7 +46,7 @@ li {
 }
 
 .active-page {
-	border-left: 1px solid #2f4858;
+	border-left: 5px solid #33658a;
 	padding-left: 5px;
 }
 
@@ -46,12 +57,12 @@ li {
 	min-height: 100vh;
 }
 
-#side-nav,
-#main-content {
+nav,
+main {
 	padding: 20px;
 }
 
-#side-nav {
+nav {
 	flex: 0 0 75px;
 
 	display: flex;
@@ -59,24 +70,24 @@ li {
 	/*	background-color: red;*/
 }
 
-#main-content {
+main {
 	flex-grow: 1;
 	/*	background-color: blue;*/
 	margin-left: 0;
 }
 
-#side-nav-links {
+#nav-links {
 	padding: 53px 0 0 0;
 	display: flex;
 	flex-direction: column;
 }
 
-#side-nav-links li {
+#nav-links li {
 	list-style: none;
 	margin: 10px 0;
 }
 
-#side-nav-social {
+#nav-social {
 	margin-top: auto;
 }
 
@@ -108,12 +119,19 @@ hr {
 }
 
 @media only screen and (max-width: 550px) {
+	
 	#main-container {
 		flex-direction: column;
 	}
 
-	#side-nav,
-	#side-nav-links {
+	nav {
+		position: sticky;
+		top: 0;
+		background: rgba(211, 230, 240, 0.85);
+	}
+
+	nav,
+	#nav-links {
 		flex-direction: row;
 		align-items: center;
 		margin-top: 0;
@@ -121,25 +139,25 @@ hr {
 		padding-top: 10px;
 	}
 
-	#side-nav-links a {
+	#nav-links a {
 		padding-left: 0;
 		margin-right: 10px;
 	}
 
-	#side-nav-links a:hover {
+	#nav-links a:hover {
 		color: white;
-		border-bottom: 1px solid white;
+		border-bottom: 3px solid white;
 		border-left: 0;
 	}
 
 	.active-page {
-		border-bottom: 1px solid #2f4858;
+		border-bottom: 3px solid #33658a;
 		border-left: 0;
 		padding-left: 0px;
 		margin-right: 10px !important;
 	}
 
-	#side-nav-social {
+	#nav-social {
 		margin-bottom: auto;
 		margin-left: auto;
 	}
@@ -148,7 +166,7 @@ hr {
 		margin-top: 0;
 	}
 
-	#main-content {
+	main {
 		padding-top: 0;
 	}
 
