@@ -117,6 +117,14 @@ main {
 	margin: 8.5px 23px 8.5px 0px;
 }
 
+.learning {
+	color: #86bbd8;
+}
+
+.want-to-learn {
+	color: grey;
+}
+
 #about-me-portrait {
 	border-radius: 50%;
 	border: 1px solid #33658a;
