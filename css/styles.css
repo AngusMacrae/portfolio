@@ -38,7 +38,10 @@ h1,
 h2,
 h3,
 p,
-li {
+li, 
+label,
+input,
+textarea {
 	color: #33658a;
 	font-family: 'Ubuntu', sans-serif;
 	margin: 17px 0;
@@ -184,6 +187,42 @@ hr {
 	border: 0;
 	border-top: 1px solid #33658a;
 	margin: 40px auto;
+}
+
+form {
+	max-width: 400px;
+	margin: 30px auto 0;
+}
+
+form label, form input {
+	display: block;
+	width: 80%;
+}
+
+form input:hover, form textarea:hover {
+	transition: border-color 3s;
+}
+
+form textarea {
+	width: 100%;
+	min-height: 250px;
+	resize: vertical;
+	margin-top: 0;
+	padding-left: 3px;
+}
+
+form input {
+	height: 2em;
+	padding-left: 3px;
+}
+
+fotm input, form textarea {
+	font-size: 1em;
+}
+
+#send-button {
+	font-size: 1em;
+	padding: 0.5em 1.8em;
 }
 
 @media only screen and (max-width: 640px) {
