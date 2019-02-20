@@ -166,6 +166,7 @@ hr {
 }
 
 button {
+	display: block;
 	background-color: #33658a;
 	color: white;
 	border: none;
@@ -204,7 +205,7 @@ form input:hover, form textarea:hover {
 }
 
 form textarea {
-	width: 100%;
+	width: calc(100% - 5px);
 	min-height: 250px;
 	resize: vertical;
 	margin-top: 0;
@@ -287,6 +288,24 @@ fotm input, form textarea {
 
 	main {
 		padding-top: 0;
+	}
+	
+	form {
+		max-width: 100%;
+		margin: 30px 0 0;
+	}
+	
+	form input {
+		max-width: calc(100% - 5px);
+		width: calc(100% - 5px);
+	}
+	
+	form textarea {
+		resize: none;
+	}
+	
+	#send-button {
+		margin: 0 auto;
 	}
 
 }
