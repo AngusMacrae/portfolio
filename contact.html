@@ -31,14 +31,14 @@
 <!--			<h1 id="page-header">Contact</h1>-->
 			<p><em>I'm always on the lookout for interesting new projects.</em></p>
 			<p>If there's anything I can help you out with, please don't hesitate to get in touch using the contact form below.</p>
-			<form>
-				<label>Your name:</label>
-				<input>
-				<label>Your e-mail address:</label>
-				<input type="email">
-				<label>Your message:</label>
-				<textarea></textarea>
-				<button id="send-button">Send</button>
+			<form action="">
+				<label for="nameInput">Your name:</label>
+				<input type="text" id="nameInput" name="name">
+				<label for="emailInput">Your e-mail address:</label>
+				<input type="email" id="emailInput" name="email">
+				<label for="msgInput">Your message:</label>
+				<textarea id="msgInput" name="message"></textarea>
+                <input type="submit" id="send-button" value="Send" class="button">
 			</form>
 		</main>
 	</div>
