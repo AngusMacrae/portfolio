@@ -57,6 +57,12 @@ em {
 	font-size: 1.2em;
 }
 
+.portfolio-item em {
+    
+    font-size: 1em;
+    
+}
+
 #active-page {
 	border-left: 5px solid #33658a;
 	cursor: default;
@@ -154,14 +160,12 @@ main {
 	margin-top: 20px;
 }
 
-/*
 hr {
-	border: 0;
+	border-top: 0px !important;
 	height: 1px;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #33658a, rgba(0, 0, 0, 0));
 	margin: 40px auto;
 }
-*/
 
 .portfolio-item > img {
 	display: block;
@@ -192,6 +196,7 @@ hr {
     display: inline-block;
     margin-top: 15px;
     margin-right: 10px;
+    padding: 0.5em 1.5em;
     
 }
 
@@ -217,8 +222,18 @@ form label {
     
 }
 
-form input:hover, form textarea:hover {
-	transition: border-color 3s;
+#nameInput,
+#emailInput,
+#msgInput {
+	font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #d3e6f0;
+	transition: border-color 0.5s;
+    padding-left: 5px;
+}
+
+form input {
+	height: 2em;
 }
 
 form textarea {
@@ -226,23 +241,21 @@ form textarea {
 	min-height: 250px;
 	resize: vertical;
 	margin-top: 0;
-	padding-left: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-form input {
-	height: 2em;
-	padding-left: 3px;
-}
-
-form input, form textarea {
-	font-size: 1em;
-    border-radius: 5px;
-    border: none;
+#nameInput:hover,
+#emailInput:hover,
+#msgInput:hover {
+    border: 1px solid #33658a;
 }
 
 #send-button {
+    height: 2.5em;
 	font-size: 1em;
 	padding: 0.5em 1.8em;
+    max-width: 80%;
 }
 
 @media only screen and (max-width: 640px) {
