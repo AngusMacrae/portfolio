@@ -110,8 +110,6 @@ main {
 #about-me-overview {
 	display: flex;
 	align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 #skills-title {
@@ -191,7 +189,6 @@ hr {
 
 .button:disabled {
 	background-color: grey;
-    color: lightgray;
 	cursor: inherit;
 }
 
@@ -245,19 +242,14 @@ form textarea {
 	min-height: 250px;
 	resize: vertical;
 	margin-top: 0;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #nameInput:hover,
 #emailInput:hover,
 #msgInput:hover {
     border: 1px solid #33658a;
-}
-
-#emailInput:invalid {
-    
-    border: 1px solid #f6542d;
-    
 }
 
 #send-button {

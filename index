@@ -34,7 +34,7 @@
 				<p><em>Hi.</em></p>
 				<p><em>I'm Angus Macrae.</em></p>
 				<p><em>I'm a front-end web developer.</em></p>
-				<p>Whether it's building a site from scratch, or making small but impactful improvements to an existing one, I'm your guy.</p>
+				<p>Whether it's building a site from scratch, or making small but impactful improvements to an existig one, I'm your guy.</p>
 				<p>I'd love to hear from you.</p>
                 <a href="contact.html"><button id="about-me-contact-me-button" class="button">Contact me</button></a>
 			</div>
@@ -47,8 +47,8 @@
 						<li>CSS(3)</li>
 						<li class="learning">JS (ES6)</li>
 						<li class="learning">WordPress</li>
-						<li class="learning">jQuery</li>
-						<li class="learning">Bootstrap</li>
+						<li class="want-to-learn">jQuery</li>
+						<li class="want-to-learn">Bootstrap</li>
 						<li class="want-to-learn">SCSS</li>
 						<li class="learning">Git</li>
 						<li class="want-to-learn">React</li>

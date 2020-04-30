@@ -39,7 +39,7 @@
 				<button class="button">View Live</button>
 				<button class="button">View on GitHub</button>
 				<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Technologies used: <em>HTML, CSS, JavaScript, Bootstrap</em></p>
+				<p>Technologies used: HTML, CSS, JavaScript</p>
 			</section>		
 			<hr>
 			<section class="portfolio-item">
@@ -57,7 +57,7 @@
 				<p>This is a website I created for a Taipei curry restaurant. It's a simple static page built using WordPress, with some minor CSS tweaks.</p>
 				<img src="" width="200px" height="200px">
 				<button class="button">View Live</button>
-				<button class="button" disabled>View on GitHub</button>
+				<button class="button">View on GitHub</button>
 				<p>This was the first real website I made that was destined to go live and actually be used by the public. Therefore, aside from being an introduction to the WordPress platform, this project was also a great chance for me to become familiar with website hosting and domain name registration.</p>
 				<p>Technologies used: <em>WordPress, CSS</em></p>
 			</section>
