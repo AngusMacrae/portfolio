@@ -1,20 +1,56 @@
-document.getElementById("button-portfolio").onclick = function () {
-    
-    $("#content-container").load("portfolio.html");
-    history.pushState(null, null, "portfolio");
-    
+
+
+document.getElementById("about-ajax").onclick = function () {
+
+    $("#content-wrapper").fadeOut(250, function () {
+
+        $("#content-wrapper").load("index.html #content", function () {
+
+            $("#content-wrapper").fadeIn(250);
+
+        });
+
+    });
+    history.pushState("about", null, "about");
+
 };
 
-document.getElementById("button-about").onclick = function () {
-    
-    $("#content-container").load("index.html");
-    history.pushState(null, null, "about");
-    
+document.getElementById("portfolio-ajax").onclick = function () {
+
+    $("#content-wrapper").fadeOut(250, function () {
+
+        $("#content-wrapper").load("portfolio.html #content", function () {
+
+            $("#content-wrapper").fadeIn(250);
+
+        });
+
+    });
+    history.pushState("portfolio", null, "portfolio");
+
 };
 
-document.getElementById("button-contact").onclick = function () {
-    
-    $("#content-container").load("contact.html");
-    history.pushState(null, null, "contact");
-    
+document.getElementById("contact-ajax").onclick = function () {
+
+    $("#content-wrapper").fadeOut(250, function () {
+
+        $("#content-wrapper").load("contact.html #content", function () {
+
+            $("#content-wrapper").fadeIn(250);
+
+        });
+
+    });
+    history.pushState("contact", null, "contact");
+
 };
+
+//window.onpopstate = function(e) {
+//    
+//    if (e.state != null) {
+//        
+//        
+//        
+//    }
+//    
+//}
