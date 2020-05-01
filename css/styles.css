@@ -26,12 +26,12 @@ a:visited {
 	transition: color 0.1s, border-width 0.1s;
 }
 
-.fab {
-	transition: color 0.2s;
+.social-icon {
+	transition: fill 0.2s;
 }
 
-.fab:hover {
-	color: white;
+.social-icon:hover {
+    fill: white;
 }
 
 h1,
@@ -264,6 +264,14 @@ form textarea {
 	font-size: 1em;
 	padding: 0.5em 1.8em;
     max-width: 80%;
+}
+
+.social-icon {
+    
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #33658a;
+    
 }
 
 @media only screen and (max-width: 640px) {
