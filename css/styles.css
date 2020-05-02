@@ -78,7 +78,7 @@ em {
 
 nav,
 main {
-	padding: 20px;
+	padding: 25px;
 }
 
 nav {
@@ -99,6 +99,7 @@ main {
 
 #nav-links {
 	padding: 45px 0 0 0;
+    margin-bottom: 25px;
 	display: flex;
 	flex-direction: column;
 }
@@ -111,8 +112,8 @@ main {
 #about-me-overview {
 	display: flex;
 	align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #skills-title {
@@ -160,7 +161,8 @@ main {
 }
 
 #about-me-portfolio-button {
-	margin-top: 20px;
+	margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 hr {
@@ -200,6 +202,7 @@ hr {
     display: inline-block;
     margin-top: 15px;
     margin-right: 10px;
+    font-size: 1em;
     padding: 0.5em 1.5em;
     
 }
@@ -296,17 +299,27 @@ form textarea {
 		margin-left: 7px;
 	}
 
-	nav,
-	#nav-links {
+    nav {
 		flex-direction: row;
 		align-items: center;
 		margin-top: 0;
 		padding-bottom: 0;
 		padding-top: 10px;
 	}
+
+	#nav-links {
+		flex-direction: row;
+		align-items: center;
+		margin-top: 0;
+		padding-bottom: 0;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        
+	}
 	
 	nav {
 		padding-top: 0px;
+        flex-basis: 60px;
 	}
 
 	#nav-links a {
@@ -320,14 +333,13 @@ form textarea {
 		border-left: 0;
 	}
 
-	#active-page {
+	.active-page {
 		border-bottom: 3px solid #33658a;
 		border-left: 0;
 	}
 
 	#nav-social {
-		margin-top: auto;
-		margin-bottom: auto;
+
 		margin-left: auto;
 	}
 
