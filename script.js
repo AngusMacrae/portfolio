@@ -1,4 +1,4 @@
-function showPage(newPage) {
+function showPage(newPage, push = true) {
     
     $("#content-wrapper").fadeOut(250, function () {
 
@@ -10,7 +10,16 @@ function showPage(newPage) {
 
     });
     
-    history.pushState(newPage, null, newPage);
+    if (push) {
+        
+        history.pushState(newPage, null, newPage);
+        
+    }
+
+    $("#about-nav").removeClass("active-page");
+    $("#portfolio-nav").removeClass("active-page");
+    $("#contact-nav").removeClass("active-page");
+    $("#" + newPage +"-nav").addClass("active-page");
     
 }
 
@@ -18,10 +27,6 @@ $("#about-nav").click(function(e) {
     
     e.preventDefault();
     showPage("about");
-//    $(".nav-link").toggleClass("active-page")
-    $("#about-nav").addClass("active-page");
-    $("#portfolio-nav").removeClass("active-page");
-    $("#contact-nav").removeClass("active-page");
     
 });
 
@@ -29,9 +34,6 @@ $("#portfolio-nav").click(function(e) {
     
     e.preventDefault();
     showPage("portfolio");
-    $("#about-nav").removeClass("active-page");
-    $("#portfolio-nav").addClass("active-page");
-    $("#contact-nav").removeClass("active-page");
     
 });
 
@@ -39,9 +41,6 @@ $("#contact-nav").click(function(e) {
     
     e.preventDefault();
     showPage("contact");
-    $("#about-nav").removeClass("active-page");
-    $("#portfolio-nav").removeClass("active-page");
-    $("#contact-nav").addClass("active-page");
     
 });
 
@@ -49,7 +48,7 @@ window.onpopstate = function(e) {
     
     if (e.state != null) {
         
-        showPage(e.state);
+        showPage(e.state, false);
         
     }
     
