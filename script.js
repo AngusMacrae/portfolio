@@ -28,6 +28,20 @@ $(".nav-link").click(function(e) {
     
 });
 
+$("#about-me-contact-me-button").click(function(e) {
+    
+    e.preventDefault();
+    showPage("contact");
+    
+});
+
+$("#about-me-portfolio-button").click(function(e) {
+    
+    e.preventDefault();
+    showPage("portfolio");
+    
+});
+
 window.onpopstate = function(e) {
     
     if (e.state == null) {
