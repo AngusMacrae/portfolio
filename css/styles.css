@@ -1,9 +1,13 @@
-html,
+html {
+    width: 100vw;
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	background-color: #d3e6f0;
+    overflow-x: hidden;
 }
 
 #nav-links a {
