@@ -7,19 +7,14 @@ $(document).ready(function(){
 
 });
 
-
-
 function showPage(newPage, push = true) {
     
     let toPgStr = "#" + newPage + "-preload";
     
     $("#content-wrapper").fadeOut(200, function () {
 
-//        $("#content-wrapper").load(newPage + ".html #content", function () {
         $("#content-wrapper").html($(toPgStr).html());
         $("#content-wrapper").fadeIn(200);
-
-//        });
 
     });
     
