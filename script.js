@@ -1,8 +1,22 @@
+$(document).ready(function(){
+
+    $("#portfolio-preload").load("portfolio.html #content");
+    $("#contact-preload").load("contact.html #content");
+    $("#about-preload").load("about.html #content");
+    // enable buttons
+
+});
+
+
+
 function showPage(newPage, push = true) {
+    
+    let toPgStr = "#" + newPage + "-preload";
     
     $("#content-wrapper").fadeOut(200, function () {
 
-        $("#content-wrapper").load(newPage + ".html #content", function () {
+//        $("#content-wrapper").load(newPage + ".html #content", function () {
+        $("#content-wrapper").load(toPgStr, function () {
 
             $("#content-wrapper").fadeIn(200);
 
