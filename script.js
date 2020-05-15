@@ -4,6 +4,8 @@ $(document).ready(function(){
     $("#contact-preload").load("contact.html #content");
     $("#about-preload").load("about.html #content");
     // enable buttons
+    
+    setClickListeners();
 
 });
 
@@ -15,6 +17,7 @@ function showPage(newPage, push = true) {
 
         $("#content-wrapper").html($(toPgStr).html());
         $("#content-wrapper").fadeIn(200);
+        setClickListeners();
 
     });
     
@@ -29,26 +32,31 @@ function showPage(newPage, push = true) {
     
 }
 
-$(".nav-link").click(function(e) {
-    
-    e.preventDefault();
-    showPage($(this).attr("id").slice(0,-4));
-    
-});
+function setClickListeners () {
 
-$("#about-me-contact-me-button").click(function(e) {
-    
-    e.preventDefault();
-    showPage("contact");
-    
-});
+    $(".nav-link").click(function(e) {
 
-$("#about-me-portfolio-button").click(function(e) {
+        e.preventDefault();
+        showPage($(this).attr("id").slice(0,-4));
+
+    });
+
+    $("#about-me-contact-me-button").click(function(e) {
+
+        e.preventDefault();
+        showPage("contact");
+
+    });
+
+    $("#about-me-portfolio-button").click(function(e) {
+
+        e.preventDefault();
+        showPage("portfolio");
+
+    });
     
-    e.preventDefault();
-    showPage("portfolio");
-    
-});
+}
+
 
 window.onpopstate = function(e) {
     
