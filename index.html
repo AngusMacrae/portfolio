@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/am-reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico"> -->
 </head>
 
 <body>
@@ -19,12 +19,12 @@
         <nav id="side-nav">
 
             <a href="#" id="square-logo">
-                <div class="lb brace">[</div>
+                <!-- <div class="lb brace">[</div>
                 <div class="rb brace">]</div>
                 <div class="a t l">a</div>
                 <div class="m t r">m</div>
                 <div class="w b l">w</div>
-                <div class="d b r">d</div>
+                <div class="d b r">d</div> -->
             </a>
 
             <ul id="main-nav">
@@ -34,9 +34,9 @@
                 <li>
                     <a href="#work">Work</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#learning">Learning</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
@@ -72,6 +72,8 @@
 
     <main class="flow">
 
+        <!-- <img src="images/amwd-logo.png"> -->
+
         <div class="intro">
             <div class="hexagon-hor headshot">
                 <!-- <img src="images/headshot_small.jpg"> -->
@@ -87,9 +89,10 @@
                 class="lead">writing code</span> and
             building websites
             that are <span class="lead">robust</span>, <span class="lead">functional</span> and <span class="lead">look
-                great</span>. Check out my <a href="">portfolio</a> to see what I mean!</p>
+                great</span>. Check out my <a href="#work">portfolio</a> to see what I mean!</p>
         <p>I'm currently available for projects big and small. Whether it's a simple contact form for your family
-            business, or the next Uber, <span class="lead">I'm your guy</span>. <a href="">Contact me</a> to discuss.
+            business, or the next Uber, <span class="lead">I'm your guy</span>. <a href="#contact">Contact me</a> to
+            discuss.
         </p>
 
         <h2>#what <span class="muted">I can do</span></h2>
@@ -98,16 +101,17 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>React</li>
+            <li>Git</li>
+            <li>SCSS</li>
             <li>WordPress</li>
             <li>jQuery</li>
             <li>Bootstrap</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>SCSS</li>
-            <li>Git</li>
-            <li>React</li>
             <li>NPM</li>
             <li>Responsive Web Design</li>
+            <li>APIs</li>
         </ul>
 
         <h2 id="work" class="scroll-section">#portfolio <span class="muted">of work</span></h2>
@@ -116,6 +120,23 @@
             you can see the source code.</p>
 
         <div id="portfolio-items">
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/mind-garden-login.jpg">
+                <h3>Mind Garden</h3>
+                <p>lorem iipsum askdjflakjsdflkajsdfl asdhf asd fsd fasdf asdfa sdf df</p>
+                <div class="portfolio-buttons">
+                    <button>View live</button>
+                    <button>View code</button>
+                </div>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                </ul>
+            </article>
 
             <article class="portfolio-item flow flow-tight">
                 <img src="images/portfolio/weather-tokyo-cropped.jpg">
@@ -130,12 +151,13 @@
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JS</li>
+                    <li>API</li>
                 </ul>
             </article>
 
             <article class="portfolio-item flow flow-tight">
-                <img src="images/portfolio/mind-garden-login.jpg">
-                <h3>Mind Garden</h3>
+                <img src="images/portfolio/hanzi-quest.jpg">
+                <h3>Hanzi Quest</h3>
                 <p>lorem iipsum askdjflakjsdflkajsdfl asdhf asd fsd fasdf asdfa sdf df</p>
                 <div class="portfolio-buttons">
                     <button>View live</button>
@@ -144,21 +166,96 @@
                 <ul class="skills">
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>PHP</li>
-                    <li>MySQL</li>
+                    <li>JS</li>
+                    <li>Bootstrap</li>
+                    <li>API</li>
+                </ul>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/insite-music.jpg">
+                <h3>Insite Music</h3>
+                <p>lorem iipsum askdjflakjsdflkajsdfl asdhf asd fsd fasdf asdfa sdf df</p>
+                <div class="portfolio-buttons">
+                    <button>View live</button>
+                    <button>View code</button>
+                </div>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/seat-picker.jpg">
+                <h3>Cinema Seat Picker</h3>
+                <p>lorem iipsum askdjflakjsdflkajsdfl asdhf asd fsd fasdf asdfa sdf df</p>
+                <div class="portfolio-buttons">
+                    <button>View live</button>
+                    <button>View code</button>
+                </div>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/reaction-tester.jpg">
+                <h3>Reaction Tester</h3>
+                <p>lorem iipsum askdjflakjsdflkajsdfl asdhf asd fsd fasdf asdfa sdf df</p>
+                <div class="portfolio-buttons">
+                    <button>View live</button>
+                    <button>View code</button>
+                </div>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/codeplayer.jpg">
+                <h3>Code Player</h3>
+                <p>lorem iipsum askdjflakjsdflkajsdfl asdhf asd fsd fasdf asdfa sdf df</p>
+                <div class="portfolio-buttons">
+                    <button>View live</button>
+                    <button>View code</button>
+                </div>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/video-player.jpg">
+                <h3>Custom Video Player</h3>
+                <p>lorem iipsum askdjflakjsdflkajsdfl asdhf asd fsd fasdf asdfa sdf df</p>
+                <div class="portfolio-buttons">
+                    <button>View live</button>
+                    <button>View code</button>
+                </div>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
                 </ul>
             </article>
 
         </div>
 
-        <h2 id="learning" class="scroll-section">#never <span class="muted">stop learning</span></h2>
+        <!-- <h2 id="learning" class="scroll-section">#never <span class="muted">stop learning</span></h2>
         <p>Both professionally and with my hobbies, I'm constantly seeking to improve and learn. Here are a few of the
             things I've been doing recently to help develop my skills.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
+            anim id est laborum.</p> -->
 
         <h2 id="contact" class="scroll-section">#contact <span class="muted">me</span></h2>
         <p>Need a simple reservations form for your restaurant? Or are you building the next Uber? Regardless of the

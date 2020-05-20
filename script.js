@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const sections = document.querySelectorAll(".scroll-section");
     const links = document.querySelectorAll("#main-nav a");
-    const sectionMargin = 250;
+    const sectionMargin = 200;
 
     const makeActive = (link) => links[link].classList.add("active-page");
 
