@@ -254,8 +254,7 @@ ul.skills li::after {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-left: -3em;
-	margin-right: -3em;
+	margin: 2em -4em -2em;
 }
 
 .portfolio-item {
@@ -267,9 +266,9 @@ ul.skills li::after {
 	transition: transform 0.2s;
 	display: flex;
 	flex-direction: column;
-	margin-left: 0.5em;
-	margin-right: 0.5em;
-	margin-bottom: 1em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-bottom: 3em;
 }
 
 .portfolio-item:hover {
@@ -419,6 +418,14 @@ button:hover {
 		border-right: none;
 		width: 100%;
 		padding: 1em;
+	}
+
+	div.padder {
+		display: none;
+	}
+
+	div.footer {
+		margin: 2em 0;
 	}
 
 	#side-nav-container {
