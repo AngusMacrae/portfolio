@@ -501,6 +501,7 @@ button:hover {
 
 	main {
 		border-right: none;
+		width: 100%;
 	}
 
 	#side-nav-container {
