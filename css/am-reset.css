@@ -45,6 +45,10 @@ select {
     --flow-space: 1.5em;
 }
 
+.flow-tight {
+    --flow-space: 1em;
+}
+
 .flow>*+* {
     margin-top: var(--flow-space);
 }

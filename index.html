@@ -94,7 +94,7 @@
 
         <h2>#what <span class="muted">I can do</span></h2>
         <p>I am proficient with the following technologies:</p>
-        <ul class="skills">
+        <ul class="skills" id="main-skills-list">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -115,34 +115,41 @@
         <p>Each one includes a link to view the live site and, if applicable, to the project's GitHub repository where
             you can see the source code.</p>
 
-        <section id="portfolio-items">
+        <div id="portfolio-items">
 
-            <article class="portfolio-item">
-                <img src="images/portfolio/weather-initial.jpg">
-                <div class="portfolio-info">
-                    <h3>What's the Weather?</h3>
-                    <ul class="skills">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/weather-tokyo-cropped.jpg">
+                <h3>What's the Weather?</h3>
+                <p>lorem iipsum askdjflakjsdflkajsdfl asdhf asd fsd fasdf asdfa sdf df asdfasd a sdf as d sd f sd
+                    fasdfasdf asdf sd sdfs d f</p>
+                <div class="portfolio-buttons">
                     <button>View live</button>
                     <button>View code</button>
                 </div>
-            </article>
-            <!-- <article class="portfolio-item">
-                <img src="images/portfolio/weather-initial.jpg">
-                <h3>What's the Weather?</h3>
                 <ul class="skills">
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>JS</li>
                 </ul>
-                <button>View live</button>
-                <button>View code</button>
-            </article> -->
+            </article>
 
-        </section>
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/mind-garden-login.jpg">
+                <h3>Mind Garden</h3>
+                <p>lorem iipsum askdjflakjsdflkajsdfl asdhf asd fsd fasdf asdfa sdf df</p>
+                <div class="portfolio-buttons">
+                    <button>View live</button>
+                    <button>View code</button>
+                </div>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                </ul>
+            </article>
+
+        </div>
 
         <h2 id="learning" class="scroll-section">#never <span class="muted">stop learning</span></h2>
         <p>Both professionally and with my hobbies, I'm constantly seeking to improve and learn. Here are a few of the
@@ -171,6 +178,8 @@
     </main>
 
     <div class="padder"></div>
+
+    <div hidden id="main-preload"></div>
 
     <script src="script.js"></script>
 </body>
