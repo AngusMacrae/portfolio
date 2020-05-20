@@ -120,11 +120,21 @@ nav ul a {
 	padding-left: 0.46em;
 }
 
+#main-nav a::before {
+	content: "_";
+	opacity: 0;
+}
+
 #main-nav a.active-page {
 	background-color: var(--dark-grey-highlight);
 	border-top: 1px solid var(--light-grey);
 	border-bottom: 1px solid var(--light-grey);
 	border-right: 1px solid var(--dark-grey-highlight) !important;
+}
+
+#main-nav a.active-page::before {
+	content: "_";
+	animation: blink 1s infinite;
 }
 
 #main-nav a:not(.active-page):hover {
@@ -269,6 +279,7 @@ ul.skills li::after {
 	margin-left: 1.5em;
 	margin-right: 1.5em;
 	margin-bottom: 3em;
+	padding-bottom: 1em;
 }
 
 .portfolio-item:hover {
@@ -280,13 +291,31 @@ ul.skills li::after {
 	height: 18em;
 }
 
-.portfolio-item :not(img) {
+.portfolio-item> :not(img) {
 	margin-left: 1em;
 	margin-right: 1em;
 }
 
+.portfolio-item .portfolio-header {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .portfolio-item h3 {
 	color: var(--off-white);
+	margin-right: auto;
+}
+
+.portfolio-item .skills {
+	margin: 0;
+}
+
+.portfolio-item .skills li {
+	background-color: var(--dark-coral);
+	font-size: 90%;
+	vertical-align: middle;
+	padding: 0.2em 0.5em 0;
+	margin-left: 0.5em;
 }
 
 .portfolio-item p {
@@ -295,29 +324,31 @@ ul.skills li::after {
 
 .portfolio-buttons {
 	display: flex;
+	flex-direction: row-reverse;
 }
 
-.portfolio-buttons button {
-	padding: 0.4em 0;
+.portfolio-buttons a {
+	font-weight: bold;
+	font-size: 90%;
+	padding: 0.4em 0.5em;
 	margin: 0;
-	flex: 1 0 34%;
 }
 
-.portfolio-buttons button:first-of-type {
-	margin-right: 1em;
+.portfolio-buttons a:hover {
+	text-decoration: none;
 }
 
-.portfolio-item .skills {
-	margin-right: 0;
-	margin-bottom: 0.5em;
+.portfolio-buttons a.primary {
+	background-color: var(--red);
+	color: var(--dark-grey);
 }
 
-.portfolio-item .skills li {
-	background-color: var(--dark-coral);
-	padding: 0.1em 0.5em;
-	margin-left: 0;
-	margin-right: 0.5em;
-	margin-bottom: 0.5em;
+.portfolio-buttons a.primary:hover {
+	background-color: var(--red-highlight);
+}
+
+.portfolio-buttons a:first-of-type {
+	margin-left: 1em;
 }
 
 input,
