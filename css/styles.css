@@ -298,7 +298,6 @@ ul.skills li::after {
 
 .portfolio-item .portfolio-header {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .portfolio-item h3 {
@@ -307,6 +306,7 @@ ul.skills li::after {
 }
 
 .portfolio-item .skills {
+	flex-wrap: wrap;
 	margin: 0;
 }
 
@@ -454,6 +454,10 @@ button:hover {
 
 	div.padder {
 		display: none;
+	}
+
+	#main-nav a::before {
+		content: "";
 	}
 
 	div.footer {
