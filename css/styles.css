@@ -503,6 +503,25 @@ button:hover {
 		border-right: none;
 	}
 
+	<<<<<<< HEAD form {
+		max-width: 100%;
+		margin: 30px 0 0;
+	}
+
+	form input {
+		max-width: calc(100% - 5px);
+		width: calc(100% - 5px);
+	}
+
+	form textarea {
+		resize: none;
+	}
+
+	#send-button {
+		margin: 0 auto;
+		max-width: 200px;
+	}
+
 	#side-nav-container {
 		position: sticky;
 		top: 0;
@@ -518,6 +537,7 @@ button:hover {
 
 	#side-nav>* {
 		margin: 0;
+		>>>>>>>version2
 	}
 
 	a#square-logo {
