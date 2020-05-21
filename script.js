@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //     document.querySelector('body').classList.add("visible");
     // }
 
-    setTimeout(fadeLoading, 500);
-    setTimeout(enableScroll, 3500);
+    // setTimeout(fadeLoading, 500);
+    // setTimeout(enableScroll, 3500);
 
     // let currentActive = 0;
 
