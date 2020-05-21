@@ -230,21 +230,12 @@ main a:hover {
 }
 
 .skills#main-skills-list {
-	justify-content: space-between;
 	color: var(--off-white);
-}
-
-ul.skills {
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .skills#main-skills-list li {
 	margin: 0 0.5em;
-}
-
-.skills#main-skills-list li:last-of-type {
-	margin-right: auto;
+	display: inline;
 }
 
 .skills#main-skills-list li::before {
@@ -306,6 +297,7 @@ ul.skills li::after {
 }
 
 .portfolio-item .skills {
+	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
 }
