@@ -18,7 +18,7 @@
 html {
 	scroll-behavior: smooth;
 	background: linear-gradient(-45deg, var(--light-grey), var(--dark-grey), var(--light-grey), var(--dark-grey));
-	width: 100vw;
+	/* width: 100vw; */
 }
 
 body {
@@ -28,10 +28,11 @@ body {
 	font-weight: normal;
 	font-size: 110%;
 	position: relative;
-	overflow-y: hidden;
-	overflow-x: hidden;
+	/* overflow-y: hidden; */
+	/* overflow-x: hidden; */
 }
 
+/* 
 body.visible {
 	overflow-y: scroll;
 }
@@ -63,8 +64,6 @@ body.visible {
 }
 
 .hex-brick {
-	/* background-color: var(--dark-grey); */
-	/* opacity: 0; */
 	width: 30px;
 	height: 17px;
 	position: absolute;
@@ -72,9 +71,6 @@ body.visible {
 	animation-name: fade;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
-	/* animation-name: fade-in;
-	animation-duration: 6s;
-	animation-iteration-count: 1; */
 }
 
 .h2 {
@@ -367,7 +363,7 @@ body.visible {
 		opacity: 1;
 	}
 }
-
+*/
 
 h1,
 h2,

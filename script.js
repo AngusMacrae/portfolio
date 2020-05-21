@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const removeActive = (link) => links[link].classList.remove("active-page");
     const removeAllActive = () => [...Array(sections.length).keys()].forEach((link) => removeActive(link));
 
-    function fadeLoading() {
-        document.querySelector('.loading-screen').classList.add("faded-out");
-        document.querySelector('.socket').classList.add("faded-out");
-    }
+    // function fadeLoading() {
+    //     document.querySelector('.loading-screen').classList.add("faded-out");
+    //     document.querySelector('.socket').classList.add("faded-out");
+    // }
 
-    function enableScroll() {
-        document.querySelector('body').classList.add("visible");
-    }
+    // function enableScroll() {
+    //     document.querySelector('body').classList.add("visible");
+    // }
 
     setTimeout(fadeLoading, 500);
     setTimeout(enableScroll, 3500);
