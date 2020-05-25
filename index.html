@@ -2,81 +2,533 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angus Macrae - Web Developer</title>
     <meta name="description" content="">
+    <title>Angus Macrae - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/am-reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
-    <link href="images/favicon.ico" rel="shortcut icon">
+    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico"> -->
 </head>
 
 <body>
-    <div id="main-container">
-        <nav>
-            <ul id="nav-links">
-                <li><a id="about-nav" href="index.html" class="active-page nav-link">About</a></li>
-                <li><a id="portfolio-nav" href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a id="contact-nav" href="contact.html" class="nav-link">Contact</a></li>
+    <!-- 
+    <div class="loading-screen">
+        <div class="socket">
+            <div class="gel center-gel">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c1 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c2 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c3 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c4 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c5 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c6 r1">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+
+            <div class="gel c7 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+
+            <div class="gel c8 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c9 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c10 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c11 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c12 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c13 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c14 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c15 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c16 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c17 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c18 r2">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c19 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c20 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c21 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c22 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c23 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c24 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c25 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c26 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c28 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c29 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c30 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c31 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c32 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c33 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c34 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c35 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c36 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+            <div class="gel c37 r3">
+                <div class="hex-brick h1"></div>
+                <div class="hex-brick h2"></div>
+                <div class="hex-brick h3"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="side-nav-container">
+        <nav id="side-nav">
+
+            <a href="#" id="square-logo"></a>
+
+            <ul id="main-nav">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <!-- <li>
+                    <a href="#learning">Learning</a>
+                </li> -->
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
-            <div id="nav-social">
-                <span id="nav-social-links">
-                    <a href="https://github.com/AngusMacrae" target="_blank"><svg class="social-icon"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" />
-                        </svg></a>
-                    <a href="https://codepen.io/angusmacrae/#" target="_blank"><svg class="social-icon"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m.455 16.512 10.969 7.314c.374.23.774.233 1.152 0l10.969-7.314c.281-.187.455-.522.455-.857v-7.312c0-.335-.174-.67-.455-.857l-10.969-7.313c-.374-.23-.774-.232-1.152 0l-10.969 7.313c-.281.187-.455.522-.455.857v7.312c0 .335.174.67.455.857zm10.514 4.528-8.076-5.384 3.603-2.411 4.473 2.987zm2.062 0v-4.808l4.473-2.987 3.603 2.411zm8.907-7.314-2.585-1.727 2.585-1.728zm-8.907-10.767 8.076 5.384-3.603 2.411-4.473-2.987zm-1.031 6.602 3.643 2.438-3.643 2.438-3.643-2.438zm-1.031-6.602v4.808l-4.473 2.987-3.603-2.411zm-8.906 7.314v-.001l2.585 1.728-2.585 1.728z" />
-                        </svg></a>
+
+            <ul id="social-links">
+                <li>
                     <a href="https://www.linkedin.com/in/angus-macrae/" target="_blank"><svg class="social-icon"
                             viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0" />
                         </svg></a>
-                </span>
-            </div>
+                </li>
+                <li>
+                    <a href="https://codepen.io/angusmacrae" target="_blank"><svg class="social-icon"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m.455 16.512 10.969 7.314c.374.23.774.233 1.152 0l10.969-7.314c.281-.187.455-.522.455-.857v-7.312c0-.335-.174-.67-.455-.857l-10.969-7.313c-.374-.23-.774-.232-1.152 0l-10.969 7.313c-.281.187-.455.522-.455.857v7.312c0 .335.174.67.455.857zm10.514 4.528-8.076-5.384 3.603-2.411 4.473 2.987zm2.062 0v-4.808l4.473-2.987 3.603 2.411zm8.907-7.314-2.585-1.727 2.585-1.728zm-8.907-10.767 8.076 5.384-3.603 2.411-4.473-2.987zm-1.031 6.602 3.643 2.438-3.643 2.438-3.643-2.438zm-1.031-6.602v4.808l-4.473 2.987-3.603-2.411zm-8.906 7.314v-.001l2.585 1.728-2.585 1.728z" />
+                        </svg></a>
+                </li>
+                <li>
+                    <a href="https://github.com/AngusMacrae" target="_blank"><svg class="social-icon"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" />
+                        </svg></a>
+                </li>
+                <li class="link-padder"></li>
+            </ul>
+
         </nav>
-        <main id="content-wrapper">
-            <div id="content">
-                <div id="about-me-content">
-                    <p><em>Hi.</em></p>
-                    <p><em>I'm Angus Macrae.</em></p>
-                    <p><em>I'm a front-end web developer.</em></p>
-                    <p>Whether it's building a site from scratch, or making small but impactful improvements to an
-                        existing one, I'm your guy.</p>
-                    <p>I'd love to hear from you.</p>
-                    <a href="contact.html"><button id="about-me-contact-me-button" class="button">Contact
-                            me</button></a>
-                </div>
-                <div id="about-me-overview">
-                    <img src="images/headshot_small.jpg" id="about-me-portrait">
-                    <div id="skill-list-container">
-                        <h3 id="skills-title">Skills at a glance</h3>
-                        <ul id="skill-list">
-                            <li>HTML(5)</li>
-                            <li>CSS(3)</li>
-                            <li class="learning">JavaScript</li>
-                            <li>WordPress</li>
-                            <li class="learning">jQuery</li>
-                            <li class="learning">Bootstrap</li>
-                            <li class="learning">PHP</li>
-                            <li class="learning">MySQL</li>
-                            <li class="want-to-learn">SCSS</li>
-                            <li class="learning">Git</li>
-                            <li class="want-to-learn">React</li>
-                            <li class="learning">NPM</li>
-                            <li class="learning">Responsive Web Design</li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="portfolio.html"><button id="about-me-portfolio-button" class="button">Check out my
-                        portfolio</button></a>
-            </div>
-        </main>
     </div>
+
+    <main class="flow">
+
+        <div class="intro">
+            <div class="hexagon-hor headshot">
+            </div>
+            <div class="logo">
+                <h1 class="blink">amwd</h1>
+                <p class="tagline default"><span class="lead">angus macrae</span> | web developer</p>
+            </div>
+        </div>
+        <p class="tagline mobile" hidden><span class="lead">angus macrae</span> | web developer</p>
+
+        <h2 class="scroll-section" id="about">#who <span class="muted">I am</span></h2>
+        <p>I am a self-taught web developer from the UK, currently based in Taipei, Taiwan. I love <span
+                class="lead">writing code</span> and
+            building websites
+            that are <span class="lead">robust</span>, <span class="lead">functional</span> and <span class="lead">look
+                great</span>. Check out my <a href="#work">work</a> to see what I mean!</p>
+        <p>I'm currently available for projects big and small. Whether you just need a simple contact form for your
+            family
+            business, or a complex web app, <span class="lead">I'm your guy</span>. <a href="#contact">Contact me</a> to
+            discuss.
+        </p>
+
+        <h2>#what <span class="muted">I can do</span></h2>
+        <p>I'm constantly learning and I love a challenge. I'm currently proficient with the following technologies, but
+            I'll be adding more to the list soon.</p>
+        <ul class="skills" id="main-skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Python</li>
+            <li>Git</li>
+            <!-- <li>Vue</li> -->
+            <!-- <li>Node</li> -->
+            <!-- <li>Express</li> -->
+            <!-- <li>MongoDB</li> -->
+            <!-- <li>React</li> -->
+            <!-- <li>SCSS</li> -->
+            <li>WordPress</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+            <li>NPM</li>
+            <li>Responsive Web Design</li>
+            <li>APIs</li>
+        </ul>
+        <p>I'm a natural problem solver with excellent soft skills, and I'm also fluent in Mandarin!</p>
+
+        <h2 id="work" class="scroll-section">#portfolio <span class="muted">of work</span></h2>
+        <p>Below is a brief list of some of the projects I have completed. They are a mixture of paid projects, personal
+            projects, and learning exercises.</p>
+        <p>Each one includes a link to view the live site and, if applicable, to the relevant GitHub repository where
+            you can check out the code.</p>
+        <p>I also sometimes mess around in CodePen making UI components. There is a link to my profile at the side of
+            this page, or at the top if you're viewing on mobile.</p>
+
+        <div id="portfolio-items">
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/mind-garden-main.jpg">
+                <div class="portfolio-header">
+                    <h3>Mind Garden</h3>
+                    <ul class="skills">
+                        <li>Bootstrap</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <p>A diary/notes website with a PHP and MySQL backend that provides a login/signup system and a database
+                    of users and their saved content. Old entries can be changed and deleted, and any changes are
+                    automatically saved as the user types. Make your own account or log in as <span
+                        class="lead">example@example.com
+                    </span> with
+                    the password <span class="lead">asdf</span> to see how it works.</p>
+                <p>Session variables and optional cookies are used to keep the user
+                    logged in. The front end was built with Bootstrap.</p>
+                <div class="portfolio-buttons">
+                    <a href="" target="_blank" class="primary">Live Site</a>
+                    <a href="https://github.com/AngusMacrae/mind-garden" target="_blank" class="secondary">View Repo</a>
+                </div>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/weather-tokyo-cropped.jpg">
+                <div class="portfolio-header">
+                    <h3>What's the Weather?</h3>
+                    <ul class="skills">
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>API</li>
+                    </ul>
+                </div>
+                <p>An attractive weather checking app that uses the Fetch API to grab and display the current weather
+                    from
+                    OpenWeatherMap. The app also attempts to show a background image that depicts the user's searched
+                    location with weather conditions matching the current weather there.</p>
+                <p>Made using Javascript and custom CSS. The responsive layout was created with
+                    CSS Grid.</p>
+                <div class="portfolio-buttons">
+                    <a href="https://whatstheweather2020.netlify.app/" target="_blank" class="primary">Live Site</a>
+                    <a href="https://github.com/AngusMacrae/whats-the-weather" target="_blank" class="secondary">View
+                        Repo</a>
+                </div>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/hanzi-quest.jpg">
+                <div class="portfolio-header">
+                    <h3>Hanzi Quest</h3>
+                    <ul class="skills">
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>API</li>
+                    </ul>
+                </div>
+                <p>A tool for estimating how many Chinese characters the user knows using a custom implementation of the
+                    Elo skill rating algorithm.</p>
+                <p>Built with
+                    custom CSS and vanilla Javascript.</p>
+                <div class="portfolio-buttons">
+                    <a href="https://hanzi-quest.netlify.app/" target="_blank" class="primary">Live Site</a>
+                    <a href="https://github.com/AngusMacrae/hanzi-quest" target="_blank" class="secondary">View Repo</a>
+                </div>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="">
+                <div class="portfolio-header">
+                    <h3>Yuan House</h3>
+                    <ul class="skills">
+                        <li>CSS</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+                <p>A website I created for a Taipei curry restaurant using WordPress. I also added some
+                    tweaks using custom CSS and took care of the hosting and domain name registration.</p>
+                <div class="portfolio-buttons">
+                    <a href="" target="_blank" class="primary">Live Site</a>
+                    <!-- <a href="" target="_blank" class="secondary">View Repo</a> -->
+                </div>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/seat-picker.jpg">
+                <div class="portfolio-header">
+                    <h3>Cinema Seat Picker</h3>
+                    <ul class="skills">
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+                <p>A cinema seat selection widget made using Javascript. Local storage is used to preserve the
+                    user's seat
+                    selection.</p>
+                <div class="portfolio-buttons">
+                    <a href="https://cinema-seat-picker.netlify.app/" target="_blank" class="primary">Live Site</a>
+                    <a href="https://github.com/AngusMacrae/cinema-seat-picker" target="_blank" class="secondary">View
+                        Repo</a>
+                </div>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/insite-music.jpg">
+                <div class="portfolio-header">
+                    <h3>Insite Music</h3>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <p>A contact page I made for a London-based music PR startup using custom HTML/CSS. Flexbox was used
+                    for
+                    the
+                    layout.</p>
+                <div class="portfolio-buttons">
+                    <a href="https://insite-music.netlify.app/" target="_blank" class="primary">Live Site</a>
+                    <a href="https://github.com/AngusMacrae/insite-music" target="_blank" class="secondary">View
+                        Repo</a>
+                </div>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/reaction-tester.jpg">
+                <div class="portfolio-header">
+                    <h3>Reaction Tester</h3>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+                <p>A reaction speed game made using Javascript. The user must click on shapes that appear randomly,
+                    and
+                    their reaction speed is displayed.</p>
+                <div class="portfolio-buttons">
+                    <a href="https://reaction-tester-2020.netlify.app/" target="_blank" class="primary">Live Site</a>
+                    <a href="https://github.com/AngusMacrae/reaction-tester" target="_blank" class="secondary">View
+                        Repo</a>
+                </div>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/codeplayer.jpg">
+                <div class="portfolio-header">
+                    <h3>Code Player</h3>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+                <p>A browser sandbox for testing code snippets. Users can input HTML, CSS and JS and the result is
+                    updated live as they type.</p>
+                <div class="portfolio-buttons">
+                    <a href="https://codeplayer-2020.netlify.app/" target="_blank" class="primary">Live Site</a>
+                    <a href="https://github.com/AngusMacrae/codeplayer" target="_blank" class="secondary">View Repo</a>
+                </div>
+            </article>
+
+            <article class="portfolio-item flow flow-tight">
+                <img src="images/portfolio/video-player.jpg">
+                <div class="portfolio-header">
+                    <h3>Custom Video Player</h3>
+                    <ul class="skills">
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+                <p>A custom video player made using Javascript and the HTML5 video API. The user can play, pause and
+                    stop the video, as well as seek through it by clicking in the progress bar.</p>
+                <div class="portfolio-buttons">
+                    <a href="" target="_blank" class="primary">Live Site</a>
+                    <a href="https://github.com/AngusMacrae/custom-video-player" target="_blank" class="secondary">View
+                        Repo</a>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- <h2 id="learning" class="scroll-section">#never <span class="muted">stop learning</span></h2>
+        <p>Both professionally and with my hobbies, I'm constantly seeking to improve and learn. Here are a few of the
+            things I've been doing recently to help develop my skills.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p> -->
+
+        <h2 id="contact" class="scroll-section">#contact <span class="muted">me</span></h2>
+        <p>Do you need a website? I'd love to help you out, regardless of the size of your project. Just fill in the
+            form below to get the ball rolling.</p>
+        <p>Likewise, if you are a recruiter or company with a web developer vacancy and you think I'd be a good fit,
+            please get in
+            touch. I can provide you with a full CV via email.</p>
+        <form>
+            <input type="text" required placeholder="Your name">
+            <input type="email" required placeholder="Your email address">
+            <textarea required rows=6 placeholder="What can I do for you?"></textarea>
+            <button type="submit">Send!</button>
+        </form>
+
+        <div class="footer">
+            <small class="muted">Angus Macrae | 2020 | <a href="#">Back to the top</a></small>
+        </div>
+
+    </main>
+
+    <div class="padder">
+        <div></div>
+    </div>
+
+    <div hidden id="main-preload"></div>
+
     <script src="script.js"></script>
 </body>
 
