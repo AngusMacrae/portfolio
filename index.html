@@ -522,10 +522,10 @@
       <p>
         Likewise, if you are a recruiter or company with a web developer vacancy and you think I'd be a good fit, please get in touch. I can provide you with a full CV via email.
       </p>
-      <form>
-        <input type="text" required placeholder="Your name" />
-        <input type="email" required placeholder="Your email address" />
-        <textarea required rows="6" placeholder="What can I do for you?"></textarea>
+      <form name="contact" method="post" data-netlify="true">
+        <input type="text" name="name" required placeholder="Your name" />
+        <input type="email" name="email" required placeholder="Your email address" />
+        <textarea required rows="6" name="message" placeholder="What can I do for you?"></textarea>
         <button type="submit">Send!</button>
       </form>
 
