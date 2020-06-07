@@ -1,3 +1,69 @@
+/* RESET */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+ul[class],
+ol[class] {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.flow {
+  --flow-space: 1.5em;
+}
+
+.flow-tight {
+  --flow-space: 1em;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* COLOURS */
+
 :root {
   --dark-grey: rgb(42, 43, 42);
   --light-grey: #706c61;
@@ -13,6 +79,8 @@
   --light-coral: #7f95bb;
   --red-highlight: #da7462;
 }
+
+/* STYLES */
 
 html {
   scroll-behavior: smooth;
