@@ -1,40 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
+const sections = document.querySelectorAll('.scroll-section');
+const navLinks = document.querySelectorAll('#main-nav a');
+const sectionMargin = 200;
 
-    const sections = document.querySelectorAll(".scroll-section");
-    const links = document.querySelectorAll("#main-nav a");
-    const sectionMargin = 200;
+function makeActive(link) {
+  navLinks[link].classList.add('active-page');
+}
 
-    const makeActive = (link) => links[link].classList.add("active-page");
-    const removeActive = (link) => links[link].classList.remove("active-page");
-    const removeAllActive = () => [...Array(sections.length).keys()].forEach((link) => removeActive(link));
+function removeActive(link) {
+  navLinks[link].classList.remove('active-page');
+}
 
-    // function fadeLoading() {
-    //     document.querySelector('.loading-screen').classList.add("faded-out");
-    //     document.querySelector('.socket').classList.add("faded-out");
-    // }
+function removeAllActive() {
+  [...Array(sections.length).keys()].forEach(link => removeActive(link));
+}
 
-    // function enableScroll() {
-    //     document.querySelector('body').classList.add("visible");
-    // }
-
-    // setTimeout(fadeLoading, 500);
-    // setTimeout(enableScroll, 3500);
-
-    // let currentActive = 0;
-
-    window.addEventListener("scroll", () => {
-
-        const current = sections.length - [...sections].reverse().findIndex((section) => window.scrollY >= section.offsetTop - sectionMargin) - 1;
-
-        // if (current !== currentActive) {
-        //     removeAllActive();
-        //     currentActive = current;
-        //     makeActive(current);
-        // }
-
-        removeAllActive();
-        makeActive(current);
-
-    });
-
-}, false);
+window.addEventListener('scroll', () => {
+  let currentSection = sections.length - [...sections].reverse().findIndex(section => window.scrollY >= section.offsetTop - sectionMargin) - 1;
+  removeAllActive();
+  makeActive(currentSection);
+});
