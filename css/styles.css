@@ -72,7 +72,7 @@ select {
   --dark-coral: #4f5d75;
   --silver: #bfc0c0;
 
-  --red: #bb4430;
+  --red: hsl(9, 59%, 56%);
   --blue: #7ebdc2;
 
   --dark-grey-highlight: rgb(63, 61, 60);
@@ -90,7 +90,7 @@ html {
 
 body {
   display: flex;
-  color: var(--silver);
+  color: var(--off-white);
   font-family: 'Bitter', Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-size: 110%;
