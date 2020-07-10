@@ -17,5 +17,7 @@ function removeAllActive() {
 window.addEventListener('scroll', () => {
   let currentSection = sections.length - [...sections].reverse().findIndex(section => window.scrollY >= section.offsetTop - sectionMargin) - 1;
   removeAllActive();
-  makeActive(currentSection);
+  if ([0, 1, 2].includes(currentSection)) {
+    makeActive(currentSection);
+  }
 });
