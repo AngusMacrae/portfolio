@@ -13,6 +13,10 @@ h4 {
   letter-spacing: 0.04em;
 }
 
+h1 {
+  font-size: 310%;
+}
+
 h2 {
   font-size: 200%;
 }
@@ -21,15 +25,11 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-#main-nav a {
+#section-links a {
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.1em;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.lead {
-  color: var(--off-white);
 }
 
 .highlight {

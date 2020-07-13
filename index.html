@@ -12,20 +12,17 @@
   </head>
 
   <body>
-    <div id="side-nav-container">
-      <nav id="side-nav">
+    <div id="nav-container">
+      <nav id="nav">
         <a href="#" id="square-logo"></a>
 
-        <ul id="main-nav">
+        <ul id="section-links">
           <li>
-            <a href="#about">About</a>
+            <a href="#about-who">About</a>
           </li>
           <li>
-            <a href="#work">Work</a>
+            <a href="#portfolio">Work</a>
           </li>
-          <!-- <li>
-                    <a href="#learning">Learning</a>
-                </li> -->
           <li>
             <a href="#contact">Contact</a>
           </li>
@@ -50,185 +47,186 @@
                 <path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" /></svg
             ></a>
           </li>
-          <li class="link-padder"></li>
         </ul>
       </nav>
     </div>
 
-    <main class="flow">
-      <div class="intro">
-        <div class="hexagon-hor headshot"></div>
-        <div class="logo">
-          <h1 class="blink">amwd</h1>
-          <p class="tagline default"><span class="lead">angus macrae</span> <span class="highlight">|</span> web developer</p>
-        </div>
-      </div>
-      <p class="tagline mobile" hidden><span class="lead">angus macrae</span> | web developer</p>
+    <main>
+      <section id="header">
+        <div class="headshot hexagon-hor"></div>
+        <h1 class="logo blink">amwd</h1>
+        <p class="tagline">angus macrae <span class="highlight">|</span> web developer</p>
+      </section>
 
-      <h2 class="scroll-section" id="about">#who <span class="muted">I am</span></h2>
-      <p>I am a self-taught web developer from the UK, currently based in Birmingham. I love writing code and building websites that are robust, functional and look great. Check out my <a href="#work">work</a> to see what I mean!</p>
-      <p>I'm currently available for projects big and small. <a href="#contact">Contact me</a> to discuss.</p>
+      <section id="about-who" class="flow scroll-section">
+        <h2>#who <span class="muted">I am</span></h2>
+        <p>I am a self-taught web developer from the UK, currently based in Birmingham. I love writing code and building websites that are robust, functional and look great. Check out my <a href="#work">work</a> to see what I mean!</p>
+        <p>I'm currently available for projects big and small. <a href="#contact">Contact me</a> to discuss.</p>
+      </section>
 
-      <h2>#what <span class="muted">I can do</span></h2>
-      <p>
-        I'm always learning and I love a challenge. I'm currently proficient with the following technologies, and I'm constantly adding more to the list.
-      </p>
-      <ul class="skills" id="main-skills-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Vue</li>
-        <li>SASS (SCSS)</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>NPM</li>
-        <li>Node</li>
-        <li>Express</li>
-        <li>MongoDB</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-        <!-- <li>Python</li> -->
-        <li>WordPress</li>
-        <li>jQuery</li>
-        <li>Bootstrap</li>
-        <!-- <li>Firebase</li> -->
-        <!-- <li>AWS</li> -->
-        <li>APIs</li>
-        <li>Responsive Web Design</li>
-        <!-- <li>Accessibility</li> -->
-        <!-- <li>SEO</li> -->
-      </ul>
-      <p>
-        I'm a natural problem solver with excellent soft skills, and I'm also fluent in Mandarin!
-      </p>
+      <section id="about-what" class="flow">
+        <h2>#what <span class="muted">I can do</span></h2>
+        <p>
+          I'm always learning and I love a challenge. I'm currently proficient with the following technologies, and I'm constantly adding more to the list.
+        </p>
+        <ul class="skills" id="main-skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Vue</li>
+          <li>SASS (SCSS)</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>NPM</li>
+          <li>Node</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <!-- <li>Python</li> -->
+          <li>WordPress</li>
+          <li>jQuery</li>
+          <li>Bootstrap</li>
+          <!-- <li>Firebase</li> -->
+          <!-- <li>AWS</li> -->
+          <li>APIs</li>
+          <li>Responsive Web Design</li>
+          <!-- <li>Accessibility</li> -->
+          <!-- <li>SEO</li> -->
+        </ul>
+        <p>
+          I'm a natural problem solver with excellent soft skills, and I'm also fluent in Mandarin!
+        </p>
+      </section>
 
-      <h2 id="work" class="scroll-section">#portfolio <span class="muted">of work</span></h2>
-      <p>
-        Below is a brief list of some of the projects I have completed. They are a mixture of paid projects, personal projects, and learning exercises.
-      </p>
-      <p>
-        Each one includes a link to view the live site and, if applicable, to the relevant GitHub repository where you can check out the code.
-      </p>
-      <p>
-        I also sometimes mess around in CodePen making UI components. There is a link to my profile at the side of this page, or at the top if you're viewing on mobile.
-      </p>
+      <section id="portfolio" class="flow scroll-section">
+        <h2>#portfolio <span class="muted">of work</span></h2>
+        <p>
+          Below is a brief list of some of the projects I have completed. They are a mixture of paid projects, personal projects, and learning exercises.
+        </p>
+        <p>
+          Each one includes a link to view the live site and, if applicable, to the relevant GitHub repository where you can check out the code.
+        </p>
+        <p>
+          I also sometimes mess around in CodePen making UI components. There is a link to my profile at the side of this page, or at the top if you're viewing on mobile.
+        </p>
 
-      <div id="portfolio-items">
-        <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/mind-garden-main.jpg" />
-          <div class="portfolio-header">
-            <h3>Mind Garden</h3>
-            <ul class="skills">
-              <li>Bootstrap</li>
-              <li>PHP</li>
-              <li>MySQL</li>
-            </ul>
-          </div>
-          <p>
-            A diary/notes website with a PHP and MySQL backend that provides a login/signup system and a database of users and their saved content. Old entries can be changed and deleted, and any changes are automatically saved as the user types. Make your own account or log in as
-            <span class="lead">example@example.com </span> with the password <span class="lead">asdf</span> to see how it works.
-          </p>
-          <p>
-            Session variables and optional cookies are used to keep the user logged in. The front end was built with Bootstrap.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="http://mind-garden-com.stackstaging.com/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/mind-garden" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article>
+        <div id="portfolio-list">
+          <article class="portfolio-item flow flow-tight">
+            <img src="images/portfolio/mind-garden-main.jpg" />
+            <div class="portfolio-header">
+              <h3>Mind Garden</h3>
+              <ul class="skills">
+                <li>Bootstrap</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <p>
+              A diary/notes website with a PHP and MySQL backend that provides a login/signup system and a database of users and their saved content. Old entries can be changed and deleted, and any changes are automatically saved as the user types. Make your own account or log in as
+              <span class="lead">example@example.com </span> with the password <span class="lead">asdf</span> to see how it works.
+            </p>
+            <p>
+              Session variables and optional cookies are used to keep the user logged in. The front end was built with Bootstrap.
+            </p>
+            <div class="portfolio-buttons">
+              <a href="http://mind-garden-com.stackstaging.com/" target="_blank" class="primary">Live Site</a>
+              <a href="https://github.com/AngusMacrae/mind-garden" target="_blank" class="secondary">View Repo</a>
+            </div>
+          </article>
 
-        <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/bubble-it.jpg" />
-          <div class="portfolio-header">
-            <h3>Bubble-it!</h3>
-            <ul class="skills">
-              <li>Vue</li>
-              <li>CSS</li>
-              <li>JS</li>
-            </ul>
-          </div>
-          <p>
-            I'm a huge fan of bubble tea and love writing code, so I combined the two. Bubble-it is a widget for customising bubble tea orders.
-          </p>
-          <p>Users can select the drink size, topping, sweetness etc and the image updates reactively to display their selected configuration.</p>
-          <p>
-            The app was made with Vue, and SVGs were used to achieve the hand-sketched visual style.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://bubble-it.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/bubble-it-vue" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article>
+          <article class="portfolio-item flow flow-tight">
+            <img src="images/portfolio/bubble-it.jpg" />
+            <div class="portfolio-header">
+              <h3>Bubble-it!</h3>
+              <ul class="skills">
+                <li>Vue</li>
+                <li>CSS</li>
+                <li>JS</li>
+              </ul>
+            </div>
+            <p>
+              I'm a huge fan of bubble tea and love writing code, so I combined the two. Bubble-it is a widget for customising bubble tea orders.
+            </p>
+            <p>Users can select the drink size, topping, sweetness etc and the image updates reactively to display their selected configuration.</p>
+            <p>
+              The app was made with Vue, and SVGs were used to achieve the hand-sketched visual style.
+            </p>
+            <div class="portfolio-buttons">
+              <a href="https://bubble-it.netlify.app/" target="_blank" class="primary">Live Site</a>
+              <a href="https://github.com/AngusMacrae/bubble-it-vue" target="_blank" class="secondary">View Repo</a>
+            </div>
+          </article>
 
-        <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/lift-sim.jpg" />
-          <div class="portfolio-header">
-            <h3>Lift Sim</h3>
-            <ul class="skills">
-              <li>JavaScript</li>
-              <li>SASS</li>
-            </ul>
-          </div>
-          <p>
-            A simulation of a lift (elevator) servicing a building of impatient passengers. The user can add passengers to different floors and watch as the lift follows an optimised path to deliver them all to their destinations.
-          </p>
-          <p>
-            This was built as an exercise in object-oriented vanilla JS. It makes use of the HMTL5 Drag & Drop API, and uses promises to chain operations. It currently doesn't work on mobile devices.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://lift-sim.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/lift-sim" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article>
+          <article class="portfolio-item flow flow-tight">
+            <img src="images/portfolio/lift-sim.jpg" />
+            <div class="portfolio-header">
+              <h3>Lift Sim</h3>
+              <ul class="skills">
+                <li>JavaScript</li>
+                <li>SASS</li>
+              </ul>
+            </div>
+            <p>
+              A simulation of a lift (elevator) servicing a building of impatient passengers. The user can add passengers to different floors and watch as the lift follows an optimised path to deliver them all to their destinations.
+            </p>
+            <p>
+              This was built as an exercise in object-oriented vanilla JS. It makes use of the HMTL5 Drag & Drop API, and uses promises to chain operations. It currently doesn't work on mobile devices.
+            </p>
+            <div class="portfolio-buttons">
+              <a href="https://lift-sim.netlify.app/" target="_blank" class="primary">Live Site</a>
+              <a href="https://github.com/AngusMacrae/lift-sim" target="_blank" class="secondary">View Repo</a>
+            </div>
+          </article>
 
-        <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/weather-tokyo-cropped.jpg" />
-          <div class="portfolio-header">
-            <h3>What's the Weather?</h3>
-            <ul class="skills">
-              <li>CSS</li>
-              <li>JS</li>
-              <li>API</li>
-            </ul>
-          </div>
-          <p>
-            An attractive weather checking app that uses the Fetch API to grab and display the current weather from OpenWeatherMap. The app also attempts to show a background image that depicts the user's searched location with weather conditions matching the current weather there.
-          </p>
-          <p>
-            Made using Javascript and custom CSS. The responsive layout was created with CSS Grid.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://whatstheweather2020.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/whats-the-weather" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article>
+          <article class="portfolio-item flow flow-tight">
+            <img src="images/portfolio/weather-tokyo-cropped.jpg" />
+            <div class="portfolio-header">
+              <h3>What's the Weather?</h3>
+              <ul class="skills">
+                <li>CSS</li>
+                <li>JS</li>
+                <li>API</li>
+              </ul>
+            </div>
+            <p>
+              An attractive weather checking app that uses the Fetch API to grab and display the current weather from OpenWeatherMap. The app also attempts to show a background image that depicts the user's searched location with weather conditions matching the current weather there.
+            </p>
+            <p>
+              Made using Javascript and custom CSS. The responsive layout was created with CSS Grid.
+            </p>
+            <div class="portfolio-buttons">
+              <a href="https://whatstheweather2020.netlify.app/" target="_blank" class="primary">Live Site</a>
+              <a href="https://github.com/AngusMacrae/whats-the-weather" target="_blank" class="secondary">View Repo</a>
+            </div>
+          </article>
 
-        <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/solar-system-explorer.jpg" />
-          <div class="portfolio-header">
-            <h3>Solar System Explorer</h3>
-            <ul class="skills">
-              <li>Express</li>
-              <li>Node</li>
-              <li>Vue</li>
-              <li>MongoDB</li>
-              <li>SASS</li>
-            </ul>
-          </div>
-          <p>Explore the solar system! This is a full-stack app for learning about our solar system and the different objects within it. Vue and SASS were used for the frontend, and the backend API was made with Node/Express + MongoDB.</p>
-          <p>
-            <strong>
-              Note: This app is a work in progress.
-            </strong>
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://solar-system-explorer.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/solar-system-explorer" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article>
+          <article class="portfolio-item flow flow-tight">
+            <img src="images/portfolio/solar-system-explorer.jpg" />
+            <div class="portfolio-header">
+              <h3>Solar System Explorer</h3>
+              <ul class="skills">
+                <li>Express</li>
+                <li>Node</li>
+                <li>Vue</li>
+                <li>MongoDB</li>
+                <li>SASS</li>
+              </ul>
+            </div>
+            <p>Explore the solar system! This is a full-stack app for learning about our solar system and the different objects within it. Vue and SASS were used for the frontend, and the backend API was made with Node/Express + MongoDB.</p>
+            <p>
+              <strong>
+                Note: This app is a work in progress.
+              </strong>
+            </p>
+            <div class="portfolio-buttons">
+              <a href="https://solar-system-explorer.netlify.app/" target="_blank" class="primary">Live Site</a>
+              <a href="https://github.com/AngusMacrae/solar-system-explorer" target="_blank" class="secondary">View Repo</a>
+            </div>
+          </article>
 
-        <!-- <article class="portfolio-item flow flow-tight">
+          <!-- <article class="portfolio-item flow flow-tight">
                 <img src="">
                 <div class="portfolio-header">
                     <h3>Yuan House</h3>
@@ -244,153 +242,90 @@
                 </div>
             </article> -->
 
-        <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/hanzi-quest-graph.jpg" />
-          <div class="portfolio-header">
-            <h3>Hanzi Quest</h3>
-            <ul class="skills">
-              <li>CSS</li>
-              <li>JS</li>
-              <li>Chart.js</li>
-            </ul>
-          </div>
-          <p>
-            A tool for estimating how many Chinese characters the user knows using a custom implementation of the Elo skill rating algorithm. Built with custom CSS and vanilla Javascript. Chart.js was used for creating the results chart which is displayed after the test is complete.
-          </p>
-          <p>
-            Note: if you don't know Chinese but you'd like to check out how the test results are displayed, just hit the "yes" button a few times and then alternate yes/no. This will approximately simulate the answer profile of a real test attempt.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://hanzi-quest.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/hanzi-quest" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article>
+          <article class="portfolio-item flow flow-tight">
+            <img src="images/portfolio/hanzi-quest-graph.jpg" />
+            <div class="portfolio-header">
+              <h3>Hanzi Quest</h3>
+              <ul class="skills">
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Chart.js</li>
+              </ul>
+            </div>
+            <p>
+              A tool for estimating how many Chinese characters the user knows using a custom implementation of the Elo skill rating algorithm. Built with custom CSS and vanilla Javascript. Chart.js was used for creating the results chart which is displayed after the test is complete.
+            </p>
+            <p>
+              Note: if you don't know Chinese but you'd like to check out how the test results are displayed, just hit the "yes" button a few times and then alternate yes/no. This will approximately simulate the answer profile of a real test attempt.
+            </p>
+            <div class="portfolio-buttons">
+              <a href="https://hanzi-quest.netlify.app/" target="_blank" class="primary">Live Site</a>
+              <a href="https://github.com/AngusMacrae/hanzi-quest" target="_blank" class="secondary">View Repo</a>
+            </div>
+          </article>
 
-        <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/seat-picker.jpg" />
-          <div class="portfolio-header">
-            <h3>Cinema Seat Picker</h3>
-            <ul class="skills">
-              <li>CSS</li>
-              <li>JS</li>
-            </ul>
-          </div>
-          <p>
-            A cinema seat selection widget made using Javascript. Local storage is used to preserve the user's seat selection.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://cinema-seat-picker.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/cinema-seat-picker" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article>
+          <article class="portfolio-item flow flow-tight">
+            <img src="images/portfolio/seat-picker.jpg" />
+            <div class="portfolio-header">
+              <h3>Cinema Seat Picker</h3>
+              <ul class="skills">
+                <li>CSS</li>
+                <li>JS</li>
+              </ul>
+            </div>
+            <p>
+              A cinema seat selection widget made using Javascript. Local storage is used to preserve the user's seat selection.
+            </p>
+            <div class="portfolio-buttons">
+              <a href="https://cinema-seat-picker.netlify.app/" target="_blank" class="primary">Live Site</a>
+              <a href="https://github.com/AngusMacrae/cinema-seat-picker" target="_blank" class="secondary">View Repo</a>
+            </div>
+          </article>
 
-        <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/insite-music.jpg" />
-          <div class="portfolio-header">
-            <h3>Insite Music</h3>
-            <ul class="skills">
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-          <p>
-            A contact page I made for a London-based music PR startup. Built with custom HTML/CSS relying on Flexbox for the layout.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://insite-music.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/insite-music" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article>
+          <article class="portfolio-item flow flow-tight">
+            <img src="images/portfolio/insite-music.jpg" />
+            <div class="portfolio-header">
+              <h3>Insite Music</h3>
+              <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <p>
+              A contact page I made for a London-based music PR startup. Built with custom HTML/CSS relying on Flexbox for the layout.
+            </p>
+            <div class="portfolio-buttons">
+              <a href="https://insite-music.netlify.app/" target="_blank" class="primary">Live Site</a>
+              <a href="https://github.com/AngusMacrae/insite-music" target="_blank" class="secondary">View Repo</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <!-- <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/reaction-tester.jpg" />
-          <div class="portfolio-header">
-            <h3>Reaction Tester</h3>
-            <ul class="skills">
-              <li>HTML</li>
-              <li>JS</li>
-            </ul>
-          </div>
-          <p>
-            A reaction speed game made using Javascript. The user must click on shapes that appear randomly, and their reaction speed is displayed.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://reaction-tester-2020.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/reaction-tester" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article>
+      <section id="contact" class="flow scroll-section">
+        <h2>#contact <span class="muted">me</span></h2>
+        <p>
+          Do you need a website? I'd love to help you out, regardless of the size of your project. Just fill in the form below to get the ball rolling.
+        </p>
+        <p>
+          Likewise, if you are a recruiter or company with a web developer vacancy and you think I'd be a good fit, please get in touch. I can provide you with a full CV via email.
+        </p>
+        <form name="contact" method="post" data-netlify="true" class="contact-form">
+          <input type="text" name="name" required placeholder="Your name" />
+          <input type="email" name="email" required placeholder="Your email address" />
+          <textarea required rows="6" name="message" placeholder="What can I do for you?"></textarea>
+          <button type="submit">Send!</button>
+        </form>
+      </section>
 
-        <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/codeplayer.jpg" />
-          <div class="portfolio-header">
-            <h3>Code Player</h3>
-            <ul class="skills">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JS</li>
-            </ul>
-          </div>
-          <p>
-            A browser sandbox for testing code snippets. Users can input HTML, CSS and JS and the result is updated live as they type.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://codeplayer-2020.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/codeplayer" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article> -->
-
-        <!-- <article class="portfolio-item flow flow-tight">
-          <img src="images/portfolio/video-player.jpg" />
-          <div class="portfolio-header">
-            <h3>Custom Video Player</h3>
-            <ul class="skills">
-              <li>CSS</li>
-              <li>JS</li>
-            </ul>
-          </div>
-          <p>
-            A custom video player made using Javascript and the HTML5 video API. The user can play, pause and stop the video, as well as seek through it by clicking in the progress bar.
-          </p>
-          <div class="portfolio-buttons">
-            <a href="https://custom-video-player-2020.netlify.app/" target="_blank" class="primary">Live Site</a>
-            <a href="https://github.com/AngusMacrae/custom-video-player" target="_blank" class="secondary">View Repo</a>
-          </div>
-        </article> -->
-      </div>
-
-      <!-- <h2 id="learning" class="scroll-section">#never <span class="muted">stop learning</span></h2>
-        <p>Both professionally and with my hobbies, I'm constantly seeking to improve and learn. Here are a few of the
-            things I've been doing recently to help develop my skills.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p> -->
-
-      <h2 id="contact" class="scroll-section">#contact <span class="muted">me</span></h2>
-      <p>
-        Do you need a website? I'd love to help you out, regardless of the size of your project. Just fill in the form below to get the ball rolling.
-      </p>
-      <p>
-        Likewise, if you are a recruiter or company with a web developer vacancy and you think I'd be a good fit, please get in touch. I can provide you with a full CV via email.
-      </p>
-      <form name="contact" method="post" data-netlify="true" class="contact-form">
-        <input type="text" name="name" required placeholder="Your name" />
-        <input type="email" name="email" required placeholder="Your email address" />
-        <textarea required rows="6" name="message" placeholder="What can I do for you?"></textarea>
-        <button type="submit">Send!</button>
-      </form>
-
-      <div class="footer">
+      <section id="footer">
         <small class="muted">Angus Macrae | 2020 | <a href="#">Back to the top</a></small>
-      </div>
+      </section>
     </main>
 
-    <div class="padder">
+    <div class="page-spacer-right">
       <div></div>
     </div>
-
-    <div hidden id="main-preload"></div>
 
     <script src="script.js"></script>
   </body>

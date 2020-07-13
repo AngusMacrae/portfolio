@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll('.scroll-section');
-const navLinks = document.querySelectorAll('#main-nav a');
+const navLinks = document.querySelectorAll('#section-links a');
 const sectionMargin = 200;
 
 function makeActive(link) {

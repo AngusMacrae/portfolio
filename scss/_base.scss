@@ -10,25 +10,35 @@ body {
   color: var(--off-white);
 }
 
-#side-nav-container,
-div.padder {
+main {
+  background-color: var(--dark-grey-highlight);
+  border-right: 1px solid var(--light-grey);
+  max-width: 1100px;
+  padding: 6em;
+
+  section {
+    margin-top: 4em;
+  }
+
+  a {
+    color: var(--red);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--red-highlight);
+    }
+  }
+}
+
+#nav-container,
+div.page-spacer-right {
   flex: 1;
   position: relative;
 }
 
-main {
-  background-color: var(--dark-grey-highlight);
-  border-right: 1px solid var(--light-grey);
-  max-width: 1000px;
-  padding: 6em;
-}
-
-#side-nav-container {
-  border-right: 1px solid var(--light-grey);
-}
-
-#side-nav,
-div.padder div {
+#nav,
+div.page-spacer-right div {
   position: sticky;
   top: 0;
   height: 100vh;
@@ -38,16 +48,6 @@ div.padder div {
 
 h2 {
   color: var(--light-coral);
-}
-
-main a {
-  color: var(--red);
-  text-decoration: none;
-}
-
-main a:hover {
-  text-decoration: underline;
-  color: var(--red-highlight);
 }
 
 input,
@@ -63,10 +63,10 @@ button {
   color: var(--off-white);
   background-color: var(--red);
   padding: 0.4em 4em;
-}
 
-button:hover {
-  background-color: var(--red-highlight);
+  &:hover {
+    background-color: var(--red-highlight);
+  }
 }
 
 .flow {
@@ -79,6 +79,20 @@ button:hover {
 
 .flow > * + * {
   margin-top: var(--flow-space);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    background-color: var(--dark-coral);
+    font-size: 90%;
+    vertical-align: middle;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
 }
 
 @keyframes blink {
