@@ -1,25 +1,25 @@
-form {
+.contact-form {
   display: flex;
   flex-wrap: wrap;
   padding: 1em 1em 1em 2em;
   justify-content: center;
   margin: 0 auto;
-}
 
-input,
-textarea,
-form button {
-  margin-right: 1em;
-}
+  input,
+  textarea,
+  form button {
+    margin-right: 1em;
+  }
 
-input {
-  flex: 1;
-  min-width: 15em;
-  margin-bottom: 1em;
-}
+  input {
+    flex: 1;
+    min-width: 15em;
+    margin-bottom: 1em;
+  }
 
-textarea {
-  resize: vertical;
-  width: 100%;
-  margin-bottom: 1em;
+  textarea {
+    resize: vertical;
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
