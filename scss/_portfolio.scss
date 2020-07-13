@@ -1,0 +1,91 @@
+#portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2em -2em -2em;
+}
+
+.portfolio-item {
+  font-size: 0.9em;
+  flex: 1 0 20em;
+  max-width: 30em;
+  background-color: var(--dark-grey);
+  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.54);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 3em;
+  padding-bottom: 1em;
+}
+
+.portfolio-item img {
+  object-fit: cover;
+  height: 18em;
+}
+
+.portfolio-item > :not(img) {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.portfolio-item .portfolio-header {
+  display: flex;
+}
+
+.portfolio-item h3 {
+  color: var(--off-white);
+  margin-right: auto;
+}
+
+.portfolio-item .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.portfolio-item .skills li {
+  background-color: var(--dark-coral);
+  font-size: 90%;
+  vertical-align: middle;
+  padding: 0 0.5em;
+  margin: 0 0 0.5em 0.5em;
+  /* margin-left: 0.5em;
+  margin-bottom: 0.5em; */
+}
+
+.portfolio-item p:last-of-type {
+  flex: 1;
+}
+
+.portfolio-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.portfolio-buttons a {
+  font-weight: bold;
+  font-size: 90%;
+  padding: 0.4em 0.5em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.portfolio-buttons a:hover {
+  text-decoration: none;
+}
+
+.portfolio-buttons a.primary {
+  background-color: var(--red);
+  color: var(--dark-grey);
+}
+
+.portfolio-buttons a.primary:hover {
+  background-color: var(--red-highlight);
+}
+
+.portfolio-buttons a:first-of-type {
+  margin-left: 1em;
+}

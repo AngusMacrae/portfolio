@@ -1,0 +1,56 @@
+h1 {
+  color: var(--red);
+  font-size: 310%;
+}
+
+.blink::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+.tagline {
+  font-size: 120%;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hexagon-hor {
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+}
+
+.hexagon-ver {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.headshot {
+  background: url('/images/headshot_small.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+  margin: 10px 0;
+  height: Min(14em, 30vw);
+  flex: 0 0 calc(Min(14em, 30vw) * 1.1547);
+}
+
+.logo {
+  margin-left: 2em;
+  text-align: center;
+}
+
+.skills#main-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills#main-skills-list li {
+  background-color: var(--dark-coral);
+  font-size: 90%;
+  vertical-align: middle;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}

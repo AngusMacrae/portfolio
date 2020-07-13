@@ -1,0 +1,96 @@
+html {
+  scroll-behavior: smooth;
+  background: linear-gradient(-45deg, var(--light-grey), var(--dark-grey), var(--light-grey), var(--dark-grey));
+  /* width: 100vw; */
+}
+
+body {
+  display: flex;
+  position: relative;
+  color: var(--off-white);
+}
+
+#side-nav-container,
+div.padder {
+  flex: 1;
+  position: relative;
+}
+
+main {
+  background-color: var(--dark-grey-highlight);
+  border-right: 1px solid var(--light-grey);
+  max-width: 1000px;
+  padding: 6em;
+}
+
+#side-nav-container {
+  border-right: 1px solid var(--light-grey);
+}
+
+#side-nav,
+div.padder div {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: center url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(32,30,30)' viewBox='0 0 100 169.5'%3E%3Cpolygon points='50,34.75 93.5,59.75 93.5,109.75 50,134.75 6.5,109.75 6.5,59.75'%3E%3C/polygon%3E%3Cpolygon points='0,-50 43.5,-25 43.5,25 0,50 -43.5,25 -43.5,-25'%3E%3C/polygon%3E%3Cpolygon points='100,-50 143.5,-25 143.5,25 100,50 56.5,25 56.5,-25'%3E%3C/polygon%3E%3Cpolygon points='0,119.5 43.5,144.5 43.5,194.5 0,219.5 -43.5,194.5 -43.5,144.5'%3E%3C/polygon%3E%3Cpolygon points='100,119.5 143.5,144.5 143.5,194.5 100,219.5 56.5,194.5 56.5,144.5'%3E%3C/polygon%3E%3C/svg%3E");
+  background-size: 33px;
+}
+
+h2 {
+  color: var(--light-coral);
+}
+
+main a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: var(--red-highlight);
+}
+
+input,
+textarea,
+button {
+  padding: 0.4em 0.7em;
+  font-size: 90%;
+  border: 1px solid transparent;
+}
+
+button {
+  cursor: pointer;
+  color: var(--off-white);
+  background-color: var(--red);
+  padding: 0.4em 4em;
+}
+
+button:hover {
+  background-color: var(--red-highlight);
+}
+
+.flow {
+  --flow-space: 1.5em;
+}
+
+.flow-tight {
+  --flow-space: 1em;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+  0% {
+    opacity: 1;
+  }
+}
