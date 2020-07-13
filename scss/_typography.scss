@@ -1,0 +1,41 @@
+body {
+  font-family: 'Bitter', Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 110%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-size: 310%;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
+}
+
+#section-links a {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: var(--red);
+}
+
+.muted {
+  color: var(--light-grey);
+}

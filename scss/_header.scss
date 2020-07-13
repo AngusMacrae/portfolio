@@ -1,0 +1,46 @@
+#header {
+  margin: 0 auto;
+  max-width: 640px;
+  display: grid;
+  grid-template-areas:
+    'headshot logo'
+    'headshot tagline';
+  column-gap: 2em;
+
+  .headshot {
+    grid-area: headshot;
+    background: url('/images/headshot_small.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 35%;
+    height: 14em;
+    width: Calc(14em * 1.1547);
+    margin: auto;
+  }
+
+  .logo {
+    grid-area: logo;
+    text-align: center;
+    color: var(--red);
+    margin: auto auto 0;
+  }
+
+  .tagline {
+    grid-area: tagline;
+    text-align: center;
+    font-size: 120%;
+    margin: 0 auto auto;
+  }
+
+  .blink::after {
+    content: '|';
+    animation: blink 1s infinite;
+  }
+
+  .hexagon-hor {
+    clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  }
+
+  .hexagon-ver {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+}
