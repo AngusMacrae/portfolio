@@ -105,6 +105,10 @@ p {
   color: var(--light-grey);
 }
 
+.quote {
+  color: var(--light-coral);
+}
+
 html {
   scroll-behavior: smooth;
   background: linear-gradient(-45deg, var(--light-grey), var(--dark-grey), var(--light-grey), var(--dark-grey));
