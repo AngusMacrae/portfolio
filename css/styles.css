@@ -275,8 +275,8 @@ button:hover {
 }
 
 #nav-container #square-logo:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 #nav-container #section-links {
