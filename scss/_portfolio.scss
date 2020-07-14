@@ -12,10 +12,12 @@
     max-width: 30em;
     margin: 0 auto;
     background-color: var(--dark-grey);
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 2rem 100%, 0% -45px);
     box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.54);
     transition: transform 0.2s;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     .portfolio-item-header {
       position: relative;
@@ -29,12 +31,23 @@
 
       h3 {
         position: absolute;
-        bottom: 0;
-        margin: 1rem;
+        bottom: -1px;
         color: var(--off-white);
         background-color: var(--dark-grey);
-        // background-color: var(--red);
-        padding: 0 0.3em;
+        font-size: 1.3rem;
+        padding: 0.3em 0.8em 0;
+        // height: 45px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: -1.88rem;
+          height: 100%;
+          width: 1.9rem;
+          background-color: inherit;
+          clip-path: polygon(0 0, 100% 100%, 0 100%);
+        }
       }
     }
 
