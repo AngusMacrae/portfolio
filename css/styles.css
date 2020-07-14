@@ -275,8 +275,8 @@ button:hover {
 }
 
 #nav-container #square-logo:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 #nav-container #section-links {
@@ -426,50 +426,46 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 1em;
 }
 
-#portfolio .portfolio-item img {
-  -o-object-fit: cover;
-     object-fit: cover;
+#portfolio .portfolio-item .portfolio-item-header {
+  position: relative;
   height: 18em;
 }
 
-#portfolio .portfolio-item > :not(img) {
-  margin-left: 1em;
-  margin-right: 1em;
+#portfolio .portfolio-item .portfolio-item-header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  min-width: 100%;
 }
 
-#portfolio .portfolio-item .portfolio-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#portfolio .portfolio-item h3 {
+#portfolio .portfolio-item .portfolio-item-header h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 1rem;
   color: var(--off-white);
-  margin-right: auto;
+  background-color: var(--dark-grey);
+  padding: 0 0.3em;
 }
 
-#portfolio .portfolio-item .skills {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 0;
-}
-
-#portfolio .portfolio-item .skills li {
-  margin-right: 0;
-  margin-left: 0.5em;
-}
-
-#portfolio .portfolio-item p:last-of-type {
+#portfolio .portfolio-item .portfolio-item-info {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 0.5rem 1rem 1rem;
 }
 
-#portfolio .portfolio-buttons {
+#portfolio .portfolio-item .portfolio-item-info .skills {
+  margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-item-info .skills li {
+  margin-bottom: 0;
+  margin-top: 0.5em;
+}
+
+#portfolio .portfolio-item-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,9 +473,10 @@ button:hover {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  padding: 1em;
 }
 
-#portfolio .portfolio-buttons a {
+#portfolio .portfolio-item-buttons a {
   font-weight: bold;
   font-size: 90%;
   padding: 0.4em 0.5em;
@@ -487,20 +484,20 @@ button:hover {
   text-transform: uppercase;
 }
 
-#portfolio .portfolio-buttons a:first-of-type {
+#portfolio .portfolio-item-buttons a:first-of-type {
   margin-left: 1em;
 }
 
-#portfolio .portfolio-buttons a:hover {
+#portfolio .portfolio-item-buttons a:hover {
   text-decoration: none;
 }
 
-#portfolio .portfolio-buttons a.primary {
+#portfolio .portfolio-item-buttons a.primary {
   background-color: var(--red);
   color: var(--dark-grey);
 }
 
-#portfolio .portfolio-buttons a.primary:hover {
+#portfolio .portfolio-item-buttons a.primary:hover {
   background-color: var(--red-highlight);
 }
 
