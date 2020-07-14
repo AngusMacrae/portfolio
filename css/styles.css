@@ -430,6 +430,7 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 #portfolio .portfolio-item .portfolio-item-header {
@@ -446,11 +447,23 @@ button:hover {
 
 #portfolio .portfolio-item .portfolio-item-header h3 {
   position: absolute;
-  bottom: 0;
-  margin: 1rem;
+  bottom: -1px;
   color: var(--off-white);
   background-color: var(--dark-grey);
-  padding: 0 0.3em;
+  font-size: 1.3rem;
+  padding: 0.3em 0.8em 0;
+}
+
+#portfolio .portfolio-item .portfolio-item-header h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -1.88rem;
+  height: 100%;
+  width: 1.9rem;
+  background-color: inherit;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 
 #portfolio .portfolio-item .portfolio-item-info {
