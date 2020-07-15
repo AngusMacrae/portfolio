@@ -519,37 +519,41 @@ button:hover {
 }
 
 #contact .contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 1em 1em 1em 2em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'name email' 'msg msg' 'btn btn';
+  gap: 1em;
+  padding: 1em 3em;
 }
 
-#contact .contact-form input,
-#contact .contact-form textarea,
-#contact .contact-form form button {
-  margin-right: 1em;
+#contact .contact-form input[name='name'] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
 }
 
-#contact .contact-form input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 15em;
-  margin-bottom: 1em;
+#contact .contact-form input[name='email'] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: email;
 }
 
 #contact .contact-form textarea {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: msg;
   resize: vertical;
-  width: 100%;
-  margin-bottom: 1em;
+  min-height: 8em;
+  max-height: 60em;
+}
+
+#contact .contact-form button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: btn;
+  margin: 0 auto;
 }
 
 #footer {
@@ -651,14 +655,7 @@ button:hover {
     width: 1.1em;
   }
   #contact .contact-form {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  #contact .contact-form input,
-  #contact .contact-form textarea {
-    margin-right: 0;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    padding: 1em;
   }
   #footer {
     margin: 2em 0;
@@ -685,6 +682,9 @@ button:hover {
   #header .headshot {
     height: 10em;
     width: Calc(11.547em);
+  }
+  #contact .contact-form {
+        grid-template-areas: 'name' 'email' 'msg' 'btn';
   }
 }
 
@@ -715,6 +715,12 @@ button:hover {
   }
   #header .tagline {
     margin: 1em auto;
+  }
+  #contact .contact-form {
+    padding: 0;
+  }
+  #contact .contact-form button {
+    margin: 0;
   }
 }
 

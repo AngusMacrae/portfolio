@@ -94,17 +94,8 @@
     }
   }
 
-  #contact {
-    .contact-form {
-      padding-left: 0;
-      padding-right: 0;
-
-      input,
-      textarea {
-        margin-right: 0;
-        flex-basis: 100%;
-      }
-    }
+  #contact .contact-form {
+    padding: 1em;
   }
 
   #footer {
@@ -131,6 +122,16 @@
     .headshot {
       height: 10em;
       width: Calc(10em * 1.1547);
+    }
+  }
+
+  #contact {
+    .contact-form {
+      grid-template-areas:
+        'name'
+        'email'
+        'msg'
+        'btn';
     }
   }
 }
@@ -170,6 +171,16 @@
 
     .tagline {
       margin: 1em auto;
+    }
+  }
+
+  #contact {
+    .contact-form {
+      padding: 0;
+
+      button {
+        margin: 0;
+      }
     }
   }
 }
