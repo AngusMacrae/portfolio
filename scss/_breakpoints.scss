@@ -48,10 +48,10 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--bg-tertiary);
     border-right: none;
     overflow: hidden;
-    background: var(--dark-grey);
+    background: var(--bg-secondary);
 
     #nav {
       display: flex;
@@ -94,13 +94,13 @@
         &:hover {
           background: none !important;
           border: 1px solid transparent !important;
-          color: var(--red) !important;
+          color: var(--action-primary) !important;
         }
 
         &.active-page {
           background: none;
           border: 1px solid transparent !important;
-          color: var(--dark-coral);
+          color: var(--highlight-primary);
 
           &::before {
             content: '';

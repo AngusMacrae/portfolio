@@ -53,14 +53,36 @@ select {
 }
 
 :root {
-  --dark-grey: rgb(42, 43, 42);
-  --dark-grey-highlight: rgb(63, 61, 60);
-  --light-grey: #706c61;
-  --off-white: #f8f4e3;
-  --dark-coral: #4f5d75;
-  --light-coral: #7f95bb;
-  --red: hsl(9, 59%, 56%);
-  --red-highlight: #da7462;
+  --bg-primary-light: #fff;
+  --bg-secondary-light: #fff;
+  --bg-tertiary-light: #fff;
+  --text-primary-light: #2a2b2a;
+  --text-muted-light: #aaa;
+  --highlight-primary-light: hsl(218, 31%, 82%);
+  --highlight-secondary-light: #7f95bb;
+  --action-primary-light: #d1604d;
+  --action-secondary-light: #da7462;
+  --input-background-light: #eee;
+  --bg-primary-dark: #3e3d3c;
+  --bg-secondary-dark: #2a2b2a;
+  --bg-tertiary-dark: #706c61;
+  --text-primary-dark: #f8f4e3;
+  --text-muted-dark: #706c61;
+  --highlight-primary-dark: #4f5d75;
+  --highlight-secondary-dark: #7f95bb;
+  --action-primary-dark: #d1604d;
+  --action-secondary-dark: #da7462;
+  --input-background-dark: #fff;
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+  --bg-tertiary: var(--bg-tertiary-dark);
+  --text-primary: var(--text-primary-dark);
+  --text-muted: var(--text-muted-dark);
+  --highlight-primary: var(--highlight-primary-dark);
+  --highlight-secondary: var(--highlight-secondary-dark);
+  --action-primary: var(--action-primary-dark);
+  --action-secondary: var(--action-secondary-dark);
+  --input-background: var(--input-background-dark);
 }
 
 body {
@@ -98,20 +120,20 @@ p {
 }
 
 .highlight {
-  color: var(--red);
+  color: var(--action-primary);
 }
 
 .muted {
-  color: var(--light-grey);
+  color: var(--text-muted);
 }
 
 .quote {
-  color: var(--light-coral);
+  color: var(--highlight-secondary);
 }
 
 html {
   scroll-behavior: smooth;
-  background: linear-gradient(-45deg, var(--light-grey), var(--dark-grey), var(--light-grey), var(--dark-grey));
+  background: linear-gradient(-45deg, var(--bg-tertiary), var(--bg-secondary), var(--bg-tertiary), var(--bg-secondary));
   /* width: 100vw; */
 }
 
@@ -120,12 +142,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  color: var(--off-white);
+  color: var(--text-primary);
 }
 
 main {
-  background-color: var(--dark-grey-highlight);
-  border-right: 1px solid var(--light-grey);
+  background-color: var(--bg-primary);
+  border-right: 1px solid var(--bg-tertiary);
   max-width: 1100px;
   padding: 6em;
 }
@@ -135,13 +157,13 @@ main section {
 }
 
 main a {
-  color: var(--red);
+  color: var(--action-primary);
   text-decoration: none;
 }
 
 main a:hover {
   text-decoration: underline;
-  color: var(--red-highlight);
+  color: var(--action-secondary);
 }
 
 #nav-container,
@@ -163,7 +185,7 @@ div.page-spacer-right div {
 }
 
 h2 {
-  color: var(--light-coral);
+  color: var(--highlight-secondary);
 }
 
 input,
@@ -176,13 +198,13 @@ button {
 
 button {
   cursor: pointer;
-  color: var(--off-white);
-  background-color: var(--red);
+  color: var(--text-primary);
+  background-color: var(--action-primary);
   padding: 0.4em 4em;
 }
 
 button:hover {
-  background-color: var(--red-highlight);
+  background-color: var(--action-secondary);
 }
 
 .flow {
@@ -206,7 +228,7 @@ button:hover {
 }
 
 .skills li {
-  background-color: var(--dark-coral);
+  background-color: var(--highlight-primary);
   font-size: 90%;
   vertical-align: middle;
   padding: 0 0.5em;
@@ -239,8 +261,8 @@ button:hover {
 }
 
 #nav-container {
-  border-right: 1px solid var(--light-grey);
-  color: var(--off-white);
+  border-right: 1px solid var(--bg-tertiary);
+  color: var(--text-primary);
 }
 
 #nav-container #nav {
@@ -299,10 +321,10 @@ button:hover {
 }
 
 #nav-container #section-links a.active-page {
-  background-color: var(--dark-grey-highlight);
-  border-top: 1px solid var(--light-grey);
-  border-bottom: 1px solid var(--light-grey);
-  border-right: 1px solid var(--dark-grey-highlight) !important;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--bg-tertiary);
+  border-bottom: 1px solid var(--bg-tertiary);
+  border-right: 1px solid var(--bg-primary) !important;
 }
 
 #nav-container #section-links a.active-page::before {
@@ -312,8 +334,8 @@ button:hover {
 }
 
 #nav-container #section-links a:not(.active-page):hover {
-  background-color: var(--dark-coral);
-  border-right: 1px solid var(--light-grey);
+  background-color: var(--highlight-primary);
+  border-right: 1px solid var(--bg-tertiary);
 }
 
 #nav-container #social-links {
@@ -334,13 +356,13 @@ button:hover {
 #nav-container #social-links a .social-icon {
   height: 1.3em;
   width: 1.3em;
-  fill: var(--off-white);
+  fill: var(--text-primary);
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
 
 #nav-container #social-links a:hover .social-icon {
-  fill: var(--red);
+  fill: var(--action-primary);
 }
 
 #header {
@@ -371,7 +393,7 @@ button:hover {
   -ms-grid-column: 2;
   grid-area: logo;
   text-align: center;
-  color: var(--red);
+  color: var(--action-primary);
   margin: auto auto 0;
 }
 
@@ -416,7 +438,7 @@ button:hover {
           flex: 1 0 20em;
   max-width: 30em;
   margin: 0 auto;
-  background-color: var(--dark-grey);
+  background-color: var(--bg-secondary);
   -webkit-box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.54);
           box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.54);
   -webkit-transition: -webkit-transform 0.2s;
@@ -448,8 +470,8 @@ button:hover {
 #portfolio .portfolio-item .portfolio-item-header h3 {
   position: absolute;
   bottom: -1px;
-  color: var(--off-white);
-  background-color: var(--dark-grey);
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
   font-size: 1.3rem;
   padding: 0.3em 0.8em 0;
 }
@@ -499,6 +521,7 @@ button:hover {
   padding: 0.4em 0.5em;
   margin: 0;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 #portfolio .portfolio-item-buttons a:first-of-type {
@@ -510,12 +533,12 @@ button:hover {
 }
 
 #portfolio .portfolio-item-buttons a.primary {
-  background-color: var(--red);
-  color: var(--dark-grey);
+  background-color: var(--action-primary);
+  color: var(--bg-secondary);
 }
 
 #portfolio .portfolio-item-buttons a.primary:hover {
-  background-color: var(--red-highlight);
+  background-color: var(--action-secondary);
 }
 
 #contact .contact-form {
@@ -524,6 +547,11 @@ button:hover {
       grid-template-areas: 'name email' 'msg msg' 'btn btn';
   gap: 1em;
   padding: 1em 3em;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  background-color: var(--input-background);
 }
 
 #contact .contact-form input[name='name'] {
@@ -612,10 +640,10 @@ button:hover {
     position: sticky;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--bg-tertiary);
     border-right: none;
     overflow: hidden;
-    background: var(--dark-grey);
+    background: var(--bg-secondary);
   }
   #nav-container #nav {
     display: -webkit-box;
@@ -661,12 +689,12 @@ button:hover {
   #nav-container #section-links a:hover {
     background: none !important;
     border: 1px solid transparent !important;
-    color: var(--red) !important;
+    color: var(--action-primary) !important;
   }
   #nav-container #section-links a.active-page {
     background: none;
     border: 1px solid transparent !important;
-    color: var(--dark-coral);
+    color: var(--highlight-primary);
   }
   #nav-container #section-links a.active-page::before {
     content: '';

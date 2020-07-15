@@ -1,6 +1,6 @@
 #nav-container {
-  border-right: 1px solid var(--light-grey);
-  color: var(--off-white);
+  border-right: 1px solid var(--bg-tertiary);
+  color: var(--text-primary);
 
   #nav {
     padding-top: 20vh;
@@ -51,10 +51,10 @@
       }
 
       &.active-page {
-        background-color: var(--dark-grey-highlight);
-        border-top: 1px solid var(--light-grey);
-        border-bottom: 1px solid var(--light-grey);
-        border-right: 1px solid var(--dark-grey-highlight) !important;
+        background-color: var(--bg-primary);
+        border-top: 1px solid var(--bg-tertiary);
+        border-bottom: 1px solid var(--bg-tertiary);
+        border-right: 1px solid var(--bg-primary) !important;
 
         &::before {
           content: '_';
@@ -63,8 +63,8 @@
       }
 
       &:not(.active-page):hover {
-        background-color: var(--dark-coral);
-        border-right: 1px solid var(--light-grey);
+        background-color: var(--highlight-primary);
+        border-right: 1px solid var(--bg-tertiary);
       }
     }
   }
@@ -80,13 +80,13 @@
       .social-icon {
         height: 1.3em;
         width: 1.3em;
-        fill: var(--off-white);
+        fill: var(--text-primary);
         transition: fill 0.2s;
       }
 
       &:hover {
         .social-icon {
-          fill: var(--red);
+          fill: var(--action-primary);
         }
       }
     }
