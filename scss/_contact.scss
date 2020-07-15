@@ -1,28 +1,32 @@
 #contact {
   .contact-form {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1em 1em 1em 2em;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-
-    input,
-    textarea,
-    form button {
-      margin-right: 1em;
-    }
+    display: grid;
+    grid-template-areas:
+      'name email'
+      'msg msg'
+      'btn btn';
+    gap: 1em;
+    padding: 1em 3em;
 
     input {
-      flex: 1;
-      min-width: 15em;
-      margin-bottom: 1em;
+      &[name='name'] {
+        grid-area: name;
+      }
+      &[name='email'] {
+        grid-area: email;
+      }
     }
 
     textarea {
+      grid-area: msg;
       resize: vertical;
-      width: 100%;
-      margin-bottom: 1em;
+      min-height: 8em;
+      max-height: 60em;
+    }
+
+    button {
+      grid-area: btn;
+      margin: 0 auto;
     }
   }
 }
