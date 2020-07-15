@@ -1,4 +1,33 @@
-@media (max-width: 1125px) {
+@media (max-width: 1150px) {
+  main {
+    padding: 3em;
+  }
+}
+
+@media (max-width: 1000px) {
+  #portfolio #portfolio-list {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    margin-top: 3em;
+  }
+
+  #contact .contact-form {
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #header {
+    column-gap: 1em;
+
+    .headshot {
+      height: 10em;
+      width: Calc(10em * 1.1547);
+    }
+  }
+}
+
+@media (max-width: 820px) {
   body {
     flex-direction: column;
     position: relative;
@@ -8,7 +37,7 @@
     border-right: none;
     max-width: none;
     width: 100%;
-    padding: 4em;
+    padding: 2em;
   }
 
   div.page-spacer-right {
@@ -94,37 +123,6 @@
     }
   }
 
-  #contact .contact-form {
-    padding: 1em;
-  }
-
-  #footer {
-    margin: 2em 0;
-  }
-}
-
-@media (max-width: 900px) {
-  #portfolio #portfolio-list {
-    grid-template-columns: 1fr;
-    gap: 2em;
-    margin-top: 3em;
-  }
-}
-
-@media (max-width: 800px) {
-  main {
-    padding: 2em;
-  }
-
-  #header {
-    column-gap: 1em;
-
-    .headshot {
-      height: 10em;
-      width: Calc(10em * 1.1547);
-    }
-  }
-
   #contact {
     .contact-form {
       grid-template-areas:
@@ -132,11 +130,19 @@
         'email'
         'msg'
         'btn';
+
+      button {
+        margin: 0;
+      }
     }
+  }
+
+  #footer {
+    margin: 2em 0;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   main {
     padding: 2em 1em;
 
@@ -171,16 +177,6 @@
 
     .tagline {
       margin: 1em auto;
-    }
-  }
-
-  #contact {
-    .contact-form {
-      padding: 0;
-
-      button {
-        margin: 0;
-      }
     }
   }
 }
