@@ -8,6 +8,11 @@
     gap: 1em;
     padding: 1em 3em;
 
+    input,
+    textarea {
+      background-color: var(--input-background);
+    }
+
     input {
       &[name='name'] {
         grid-area: name;

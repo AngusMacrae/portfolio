@@ -1,10 +1,34 @@
 :root {
-  --dark-grey: rgb(42, 43, 42);
-  --dark-grey-highlight: rgb(63, 61, 60);
-  --light-grey: #706c61;
-  --off-white: #f8f4e3;
-  --dark-coral: #4f5d75;
-  --light-coral: #7f95bb;
-  --red: hsl(9, 59%, 56%);
-  --red-highlight: #da7462;
+  --bg-primary-light: #fff;
+  --bg-secondary-light: #fff;
+  --bg-tertiary-light: #fff;
+  --text-primary-light: #2a2b2a;
+  --text-muted-light: #aaa;
+  --highlight-primary-light: hsl(218, 31%, 82%);
+  --highlight-secondary-light: #7f95bb;
+  --action-primary-light: #d1604d;
+  --action-secondary-light: #da7462;
+  --input-background-light: #eee;
+
+  --bg-primary-dark: #3e3d3c;
+  --bg-secondary-dark: #2a2b2a;
+  --bg-tertiary-dark: #706c61;
+  --text-primary-dark: #f8f4e3;
+  --text-muted-dark: #706c61;
+  --highlight-primary-dark: #4f5d75;
+  --highlight-secondary-dark: #7f95bb;
+  --action-primary-dark: #d1604d;
+  --action-secondary-dark: #da7462;
+  --input-background-dark: #fff;
+
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+  --bg-tertiary: var(--bg-tertiary-dark);
+  --text-primary: var(--text-primary-dark);
+  --text-muted: var(--text-muted-dark);
+  --highlight-primary: var(--highlight-primary-dark);
+  --highlight-secondary: var(--highlight-secondary-dark);
+  --action-primary: var(--action-primary-dark);
+  --action-secondary: var(--action-secondary-dark);
+  --input-background: var(--input-background-dark);
 }

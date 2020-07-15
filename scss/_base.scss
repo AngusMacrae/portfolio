@@ -1,18 +1,18 @@
 html {
   scroll-behavior: smooth;
-  background: linear-gradient(-45deg, var(--light-grey), var(--dark-grey), var(--light-grey), var(--dark-grey));
+  background: linear-gradient(-45deg, var(--bg-tertiary), var(--bg-secondary), var(--bg-tertiary), var(--bg-secondary));
   /* width: 100vw; */
 }
 
 body {
   display: flex;
   position: relative;
-  color: var(--off-white);
+  color: var(--text-primary);
 }
 
 main {
-  background-color: var(--dark-grey-highlight);
-  border-right: 1px solid var(--light-grey);
+  background-color: var(--bg-primary);
+  border-right: 1px solid var(--bg-tertiary);
   max-width: 1100px;
   padding: 6em;
 
@@ -21,12 +21,12 @@ main {
   }
 
   a {
-    color: var(--red);
+    color: var(--action-primary);
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
-      color: var(--red-highlight);
+      color: var(--action-secondary);
     }
   }
 }
@@ -47,7 +47,7 @@ div.page-spacer-right div {
 }
 
 h2 {
-  color: var(--light-coral);
+  color: var(--highlight-secondary);
 }
 
 input,
@@ -60,12 +60,12 @@ button {
 
 button {
   cursor: pointer;
-  color: var(--off-white);
-  background-color: var(--red);
+  color: var(--text-primary);
+  background-color: var(--action-primary);
   padding: 0.4em 4em;
 
   &:hover {
-    background-color: var(--red-highlight);
+    background-color: var(--action-secondary);
   }
 }
 
@@ -86,7 +86,7 @@ button {
   flex-wrap: wrap;
 
   li {
-    background-color: var(--dark-coral);
+    background-color: var(--highlight-primary);
     font-size: 90%;
     vertical-align: middle;
     padding: 0 0.5em;
