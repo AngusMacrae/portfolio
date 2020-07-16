@@ -74,6 +74,10 @@
         transition: fill 0.2s;
       }
 
+      .social-icon-label {
+        display: none;
+      }
+
       &:hover {
         .social-icon {
           fill: var(--action-primary);

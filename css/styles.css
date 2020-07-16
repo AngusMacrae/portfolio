@@ -350,6 +350,10 @@ button:hover {
   transition: fill 0.2s;
 }
 
+#nav-container #social-links a .social-icon-label {
+  display: none;
+}
+
 #nav-container #social-links a:hover .social-icon {
   fill: var(--action-primary);
 }
@@ -704,14 +708,89 @@ button:hover {
 
 @media (max-width: 620px) {
   main {
-    padding: 2em 1em;
+    padding: 3em 1em;
   }
   main section {
     margin-top: 2em;
   }
-  #nav-container #section-links,
+  #nav-container {
+    position: fixed;
+  }
+  #nav-container #nav {
+    height: 100vh;
+    width: 12em;
+    padding: 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    background: none;
+    border-right: 1px solid var(--bg-tertiary);
+  }
+  #nav-container #nav > * {
+    margin-bottom: 3em;
+  }
+  #nav-container #nav ul {
+    -webkit-box-align: stretch !important;
+        -ms-flex-align: stretch !important;
+            align-items: stretch !important;
+    text-align: left;
+  }
+  #nav-container #nav ul a {
+    font-size: 1.2rem;
+    padding: 0.3em 0 !important;
+  }
+  #nav-container #nav #section-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #nav-container #nav #section-links li {
+    margin: 0;
+  }
+  #nav-container #square-logo {
+    width: 2.5em;
+    height: 2.5em;
+    position: relative;
+    bottom: 0.1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
   #nav-container #social-links {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #nav-container #social-links a {
+    padding: 0;
+    margin-right: 0.5em;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+  }
+  #nav-container #social-links a .social-icon {
+    position: relative;
+    top: 0.3em;
+    height: 1.4em;
+    width: 1.4em;
+  }
+  #nav-container #social-links a .social-icon-label {
+    display: inline;
+    margin-left: 0.5em;
+  }
+  #nav-container #social-links a:hover {
+    color: var(--action-primary);
   }
   #header {
         grid-template-areas: 'headshot logo' 'tagline tagline';

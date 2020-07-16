@@ -134,7 +134,7 @@
 
 @media (max-width: 620px) {
   main {
-    padding: 2em 1em;
+    padding: 3em 1em;
 
     section {
       margin-top: 2em;
@@ -142,9 +142,76 @@
   }
 
   #nav-container {
-    #section-links,
+    position: fixed;
+
+    #nav {
+      height: 100vh;
+      width: 12em;
+      padding: 1em;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      background: none;
+      border-right: 1px solid var(--bg-tertiary);
+
+      > * {
+        margin-bottom: 3em;
+      }
+
+      ul {
+        align-items: stretch !important;
+        text-align: left;
+
+        a {
+          font-size: 1.2rem;
+          padding: 0.3em 0 !important;
+        }
+      }
+
+      #section-links {
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+          margin: 0;
+        }
+      }
+    }
+
+    #square-logo {
+      width: 2.5em;
+      height: 2.5em;
+      position: relative;
+      bottom: 0.1em;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+    }
+
     #social-links {
-      display: none;
+      flex-direction: column;
+
+      a {
+        padding: 0;
+        margin-right: 0.5em;
+        transition: 0.2s color;
+
+        .social-icon {
+          position: relative;
+          top: 0.3em;
+          height: 1.4em;
+          width: 1.4em;
+        }
+
+        .social-icon-label {
+          display: inline;
+          margin-left: 0.5em;
+        }
+
+        &:hover {
+          color: var(--action-primary);
+        }
+      }
     }
   }
 
