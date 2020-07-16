@@ -43,23 +43,13 @@
 
     a {
       transition: background-color 0.2s;
-      padding-left: 0.46em;
-
-      &::before {
-        content: '_';
-        opacity: 0;
-      }
+      padding-left: 0.46em !important;
 
       &.active-page {
         background-color: var(--bg-primary);
         border-top: 1px solid var(--bg-tertiary);
         border-bottom: 1px solid var(--bg-tertiary);
         border-right: 1px solid var(--bg-primary) !important;
-
-        &::before {
-          content: '_';
-          animation: blink 1s infinite;
-        }
       }
 
       &:not(.active-page):hover {

@@ -312,12 +312,7 @@ button:hover {
 #nav-container #section-links a {
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
-  padding-left: 0.46em;
-}
-
-#nav-container #section-links a::before {
-  content: '_';
-  opacity: 0;
+  padding-left: 0.46em !important;
 }
 
 #nav-container #section-links a.active-page {
@@ -325,12 +320,6 @@ button:hover {
   border-top: 1px solid var(--bg-tertiary);
   border-bottom: 1px solid var(--bg-tertiary);
   border-right: 1px solid var(--bg-primary) !important;
-}
-
-#nav-container #section-links a.active-page::before {
-  content: '_';
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
 }
 
 #nav-container #section-links a:not(.active-page):hover {
@@ -682,24 +671,15 @@ button:hover {
   #nav-container #section-links a {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
-  }
-  #nav-container #section-links a::before {
-    content: '';
-  }
-  #nav-container #section-links a:hover {
     background: none !important;
     border: 1px solid transparent !important;
+  }
+  #nav-container #section-links a:hover {
     color: var(--action-primary) !important;
   }
   #nav-container #section-links a.active-page {
-    background: none;
-    border: 1px solid transparent !important;
     color: var(--highlight-primary);
-  }
-  #nav-container #section-links a.active-page::before {
-    content: '';
-    -webkit-animation: none !important;
-            animation: none !important;
+    border: 1px solid transparent !important;
   }
   #nav-container #social-links a {
     padding: 0;

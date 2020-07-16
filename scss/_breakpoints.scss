@@ -86,26 +86,16 @@
 
       a {
         transition: color 0.2s;
-
-        &::before {
-          content: '';
-        }
+        background: none !important;
+        border: 1px solid transparent !important;
 
         &:hover {
-          background: none !important;
-          border: 1px solid transparent !important;
           color: var(--action-primary) !important;
         }
 
         &.active-page {
-          background: none;
-          border: 1px solid transparent !important;
           color: var(--highlight-primary);
-
-          &::before {
-            content: '';
-            animation: none !important;
-          }
+          border: 1px solid transparent !important;
         }
       }
     }
