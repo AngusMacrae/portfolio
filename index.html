@@ -16,7 +16,9 @@
   <body>
     <div id="nav-container">
       <nav id="nav">
-        <a href="#" id="square-logo"></a>
+        <a href="#" id="square-logo">
+          <img src="images/amwd-logo.png" alt="Scroll to top of page">
+        </a>
 
         <ul id="section-links">
           <li>
@@ -59,12 +61,14 @@
       </nav>
     </div>
 
-    <main>
-      <section id="header">
-        <div class="headshot hexagon-hor"></div>
+    <div class="page-content">
+      <header id="header">
+        <div class="headshot hexagon-hor">
+          <img src="images/headshot_small.jpg" alt="Portrait photograph of Angus Macrae">
+        </div>
         <h1 class="logo blink">amwd</h1>
         <p class="tagline">angus macrae <span class="highlight">|</span> web developer</p>
-      </section>
+      </header>
 
       <section id="about-who" class="flow scroll-section">
         <h2>#who <span class="muted">I am</span></h2>
@@ -121,7 +125,7 @@
         <div id="portfolio-list">
           <article class="portfolio-item">
             <div class="portfolio-item-header">
-              <img src="images/portfolio/mind-garden-main.jpg" />
+              <img src="images/portfolio/mind-garden-main.jpg" alt="Screenshot of Mind Garden app" />
               <h3>Mind Garden</h3>
             </div>
             <div class="portfolio-item-info flow">
@@ -147,7 +151,7 @@
 
           <article class="portfolio-item">
             <div class="portfolio-item-header">
-              <img src="images/portfolio/bubble-it.jpg" />
+              <img src="images/portfolio/bubble-it.jpg" alt="Screenshot of Bubble It app" />
               <h3>Bubble-it!</h3>
             </div>
             <div class="portfolio-item-info flow">
@@ -173,7 +177,7 @@
 
           <article class="portfolio-item">
             <div class="portfolio-item-header">
-              <img src="images/portfolio/lift-sim.jpg" />
+              <img src="images/portfolio/lift-sim.jpg" alt="Screenshot of Lift Sim app" />
               <h3>Lift Sim</h3>
             </div>
             <div class="portfolio-item-info flow">
@@ -186,7 +190,7 @@
                 A simulation of a lift (elevator) servicing a building of impatient passengers. The user can add passengers to different floors and watch as the lift follows an optimised path to deliver them all to their destinations.
               </p>
               <p>
-                This was built as an exercise in object-oriented vanilla JS. It makes use of the HMTL5 Drag & Drop API, and uses promises to chain operations. It currently doesn't work on mobile devices.
+                This was built as an exercise in object-oriented vanilla JS. It makes use of the HMTL5 Drag & Drop API, and uses promises to chain operations. Currently does not work on touchscreen devices.
               </p>
             </div>
             <div class="portfolio-item-buttons">
@@ -197,7 +201,7 @@
 
           <article class="portfolio-item">
             <div class="portfolio-item-header">
-              <img src="images/portfolio/weather-tokyo-cropped.jpg" />
+              <img src="images/portfolio/weather-tokyo-cropped.jpg" alt="Screenshot of What's the Weather app" />
               <h3>What's the Weather?</h3>
             </div>
             <div class="portfolio-item-info flow">
@@ -222,7 +226,7 @@
 
           <article class="portfolio-item">
             <div class="portfolio-item-header">
-              <img src="images/portfolio/solar-system-explorer.jpg" />
+              <img src="images/portfolio/solar-system-explorer.jpg" alt="Screenshot of Solar System Explorer app" />
               <h3>Solar System Explorer</h3>
             </div>
             <div class="portfolio-item-info flow">
@@ -233,7 +237,10 @@
                 <li>Node</li>
                 <li>MongoDB</li>
               </ul>
-              <p>Explore the solar system! This is a full-stack app for learning about our solar system and the different objects within it. Vue and SASS were used for the frontend, and the backend API was made with Node/Express + MongoDB.</p>
+              <p>Explore the solar system! This is a full-stack app intended to help users learn about the various planets and moons in our little corner of the galaxy.</p>
+              <p>
+                Vue and SASS were used for the frontend, while the backend API was made with Node/Express & MongoDB and hosted on Heroku.
+              </p>
               <p>
                 <strong>
                   Note: This app is a work in progress.
@@ -248,7 +255,7 @@
 
           <!-- <article class="portfolio-item">
             <div class="portfolio-item-header">
-              <img src="">
+              <img src="" alt="Screenshot of Yuan House website">
                     <h3>Yuan House</h3>
                   </div>
             <div class="portfolio-item-info flow">
@@ -266,7 +273,7 @@
 
           <article class="portfolio-item">
             <div class="portfolio-item-header">
-              <img src="images/portfolio/hanzi-quest-graph.jpg" />
+              <img src="images/portfolio/hanzi-quest-graph.jpg" alt="Screenshot of Hanzi Quest app" />
               <h3>Hanzi Quest</h3>
             </div>
             <div class="portfolio-item-info flow">
@@ -291,7 +298,7 @@
 
           <article class="portfolio-item">
             <div class="portfolio-item-header">
-              <img src="images/portfolio/seat-picker.jpg" />
+              <img src="images/portfolio/seat-picker.jpg" alt="Screenshot of Cinema Seat Picker app" />
               <h3>Cinema Seat Picker</h3>
             </div>
             <div class="portfolio-item-info flow">
@@ -313,7 +320,7 @@
 
           <article class="portfolio-item">
             <div class="portfolio-item-header">
-              <img src="images/portfolio/insite-music.jpg" />
+              <img src="images/portfolio/insite-music.jpg" alt="Screenshot of Insite Music website" />
               <h3>Insite Music</h3>
             </div>
             <div class="portfolio-item-info flow">
@@ -349,10 +356,10 @@
         </form>
       </section>
 
-      <section id="footer">
+      <footer id="footer">
         <small class="muted">Angus Macrae | 2020 | <a href="#">Back to the top</a></small>
-      </section>
-    </main>
+      </footer>
+    </div>
 
     <div class="page-spacer-right">
       <div></div>

@@ -1,5 +1,5 @@
 @media (max-width: 1150px) {
-  main {
+  .page-content {
     padding: 3em;
   }
 }
@@ -33,7 +33,7 @@
     position: relative;
   }
 
-  main {
+  .page-content {
     border-right: none;
     max-width: none;
     width: 100%;
@@ -133,8 +133,8 @@
 }
 
 @media (max-width: 620px) {
-  main {
-    padding: 3em 1em;
+  .page-content {
+    padding: 2em 1em;
 
     section {
       margin-top: 2em;
@@ -243,7 +243,7 @@
     font-size: 1rem;
   }
 
-  main {
+  .page-content {
     padding: 2em 0.6em;
   }
 
