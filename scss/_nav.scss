@@ -23,18 +23,14 @@
   }
 
   #square-logo {
-    background: url(/images/amwd-logo.png) no-repeat;
-    background-size: cover;
-    height: 4em;
     width: 4em;
     display: block;
     margin-left: auto;
     margin-right: 0.7em;
-    text-decoration: none;
     transition: transform 0.2s;
 
     &:hover {
-      transform: scale(1.08);
+      transform: scale(1.03);
     }
   }
 
