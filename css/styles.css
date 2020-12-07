@@ -370,12 +370,14 @@ button:hover {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: headshot;
-  background: url("/images/headshot_small.jpg") no-repeat;
-  background-size: cover;
-  background-position: 50% 35%;
   height: 14em;
   width: Calc(16.1658em);
   margin: auto;
+}
+
+#header .headshot img {
+  position: relative;
+  bottom: 8%;
 }
 
 #header .logo {
