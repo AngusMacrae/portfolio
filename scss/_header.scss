@@ -9,12 +9,14 @@
 
   .headshot {
     grid-area: headshot;
-    background: url('/images/headshot_small.jpg') no-repeat;
-    background-size: cover;
-    background-position: 50% 35%;
     height: 14em;
     width: Calc(14em * 1.1547);
     margin: auto;
+
+    img {
+      position: relative;
+      bottom: 8%;
+    }
   }
 
   .logo {
