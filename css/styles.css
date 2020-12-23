@@ -706,13 +706,12 @@ button:hover {
 
 @media (max-width: 620px) {
   .page-content {
-    padding: 2em 1em;
+    padding: 3em 1em;
   }
   .page-content section {
     margin-top: 2em;
   }
-  #nav-container #section-links,
-  #nav-container #social-links {
+  #nav-container {
     display: none;
   }
   #header {
