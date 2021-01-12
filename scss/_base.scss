@@ -61,9 +61,7 @@ button {
 
 button {
   cursor: pointer;
-  color: var(--text-primary);
   background-color: var(--action-primary);
-  padding: 0.4em 4em;
 
   &:hover {
     background-color: var(--action-secondary);
