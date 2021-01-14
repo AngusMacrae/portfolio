@@ -393,6 +393,7 @@ button:hover {
   grid-area: tagline;
   text-align: center;
   font-size: 120%;
+  text-transform: lowercase;
   margin: 0 auto auto;
 }
 
