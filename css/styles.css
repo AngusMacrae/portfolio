@@ -227,7 +227,6 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 0.5em;
 }
 
 .skills li {
@@ -235,6 +234,8 @@ button:hover {
   font-size: 90%;
   vertical-align: middle;
   padding: 0.25em 0.6em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 @-webkit-keyframes blink {
@@ -409,10 +410,6 @@ button:hover {
 #header .hexagon-ver {
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
-
-#main-skills-list {
-  gap: 0.5em;
 }
 
 #main-skills-list li {

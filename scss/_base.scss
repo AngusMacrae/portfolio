@@ -86,13 +86,14 @@ button {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5em;
 
   li {
     background-color: var(--highlight-primary);
     font-size: 90%;
     vertical-align: middle;
     padding: 0.25em 0.6em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
   }
 }
 
