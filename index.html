@@ -4,353 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Angus Macrae" />
-    <meta name="description" content="UK-based Web Developer. Take a look at some of my previous work, or get in touch to see how I can help you." />
+    <meta name="description" content="UK-based Web Developer" />
     <title>Angus Macrae - Web Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico"> -->
-    <script src="script.js" defer></script>
   </head>
 
   <body>
-    <div id="nav-container">
-      <nav id="nav">
-        <a href="#" id="square-logo">
-          <img src="images/amwd-logo.png" alt="Scroll to top of page" />
-        </a>
-
-        <ul id="section-links">
-          <li>
-            <a href="#about-who">About</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <ul id="social-links">
-          <li>
-            <a href="https://www.linkedin.com/in/angus-macrae/" target="_blank" title="LinkedIn"
-              ><svg class="social-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                <path d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0" /></svg
-            ></a>
-          </li>
-          <li>
-            <a href="https://codepen.io/angusmacrae" target="_blank" title="CodePen"
-              ><svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="m.455 16.512 10.969 7.314c.374.23.774.233 1.152 0l10.969-7.314c.281-.187.455-.522.455-.857v-7.312c0-.335-.174-.67-.455-.857l-10.969-7.313c-.374-.23-.774-.232-1.152 0l-10.969 7.313c-.281.187-.455.522-.455.857v7.312c0 .335.174.67.455.857zm10.514 4.528-8.076-5.384 3.603-2.411 4.473 2.987zm2.062 0v-4.808l4.473-2.987 3.603 2.411zm8.907-7.314-2.585-1.727 2.585-1.728zm-8.907-10.767 8.076 5.384-3.603 2.411-4.473-2.987zm-1.031 6.602 3.643 2.438-3.643 2.438-3.643-2.438zm-1.031-6.602v4.808l-4.473 2.987-3.603-2.411zm-8.906 7.314v-.001l2.585 1.728-2.585 1.728z" /></svg
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/AngusMacrae" target="_blank" title="GitHub"
-              ><svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" /></svg
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="page-content">
-      <header id="header">
-        <div class="headshot hexagon-hor">
-          <img src="images/headshot-small.webp" alt="Portrait photograph of Angus Macrae" />
+    <main>
+      <div>
+        <h1 class="tagline">
+          Angus Macrae <span class="highlight">|</span> Web Developer
+        </h1>
+        <p>Site under construction... 🏗️</p>
+        <div>
+          <ul id="social-links">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/angus-macrae/"
+                target="_blank"
+                title="LinkedIn"
+                ><svg
+                  class="social-icon"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/AngusMacrae"
+                target="_blank"
+                title="GitHub"
+                ><svg
+                  class="social-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
         </div>
-        <h1 class="logo blink">amwd</h1>
-        <p class="tagline">Angus Macrae <span class="highlight">|</span> Web Developer</p>
-      </header>
-
-      <section id="about-who" class="flow scroll-section">
-        <h2>#who <span class="muted">I am</span></h2>
-        <p>I am a web developer currently employed in a frontend role in Birmingham, UK. I love working with React and Typescript, and take pride in writing clean code and building great looking and functional websites. Check out my <a href="#portfolio">work</a> to see what I mean!</p>
-        <!-- <p>I'm also available to take on freelance projects. <a href="#contact">Contact me</a> to discuss.</p> -->
-        <p>From time to time I also do freelance work, but unfortunately I am not open to taking on any new projects at the moment.</p>
-      </section>
-
-      <section id="about-what" class="flow">
-        <h2>#what <span class="muted">I can do</span></h2>
-        <p>I'm always learning and eager to take on new challenges. Below is a list of some of the technologies with which I am proficient. My current role is focused on React/Next.js with TypeScript and GraphQL.</p>
-        <ul class="skills" id="main-skills-list">
-          <li><img src="images/skills/html-5.png" alt="" />HTML</li>
-          <li><img src="images/skills/css-3.png" alt="" />CSS</li>
-          <li><img src="images/skills/javascript.png" alt="" />JavaScript</li>
-          <li><img src="images/skills/typescript.png" alt="" />TypeScript</li>
-          <li><img src="images/skills/react.png" alt="" />React</li>
-          <!-- <li><img src="images/skills/vue-js.png" alt="" /> Vue</li> -->
-          <li><img src="images/skills/nextjs.png" alt="" />Next.js</li>
-          <li><img src="images/skills/graphql.png" alt="" />GraphQL</li>
-          <li><img src="images/skills/sass.png" alt="" />SASS (SCSS)</li>
-          <li><img src="images/skills/git.png" alt="" />Git</li>
-          <li><img src="images/skills/github.png" alt="" />GitHub</li>
-          <!-- <li>Python</li> -->
-          <li><img src="images/skills/php.png" alt="" />PHP</li>
-          <li><img src="images/skills/mysql.png" alt="" />MySQL</li>
-          <li><img src="images/skills/node-js.png" alt="" />Node</li>
-          <li><img src="images/skills/npm.png" alt="" />NPM</li>
-          <li><img src="images/skills/expressjs.png" alt="" />Express</li>
-          <!-- <li><img src="images/skills/mongodb.png" alt="" />MongoDB</li> -->
-          <!-- <li>Firebase</li> -->
-          <!-- <li>AWS</li> -->
-          <li><img src="images/skills/bootstrap.png" alt="" />Bootstrap</li>
-          <!-- <li><img src="images/skills/jquery.png" alt="" />jQuery</li> -->
-          <li><img src="images/skills/wordpress.png" alt="" />WordPress</li>
-          <li><img src="images/skills/photoshop.png" alt="" />Photoshop</li>
-          <li><img src="images/skills/api.webp" alt="" />APIs</li>
-          <li><img src="images/skills/rwd.png" alt="" />Responsive Web Design</li>
-          <!-- <li>Accessibility</li> -->
-          <!-- <li>SEO</li> -->
-        </ul>
-        <p>I'm a natural problem solver with four years of experience (three as a mechanical engineer and one as a web developer) and excellent soft skills. Oh, and I'm also fluent in Mandarin!</p>
-      </section>
-
-      <section id="portfolio" class="flow scroll-section">
-        <h2>#portfolio <span class="muted">of work</span></h2>
-        <p>The projects below are a mixture of freelance work, personal projects, and learning exercises.</p>
-        <p>Each one includes a link to the live site and, if applicable, to the relevant GitHub repository where you can see the code.</p>
-        <p>I also sometimes mess around in <a href="https://codepen.io/angusmacrae" target="_blank">CodePen</a> making UI components.</p>
-
-        <div id="portfolio-list">
-          <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="images/portfolio/mattwritesart.webp" alt="Screenshot of mattwritesart website" />
-              <h3>mattwritesart</h3>
-            </header>
-            <div class="portfolio-item-info flow">
-              <ul class="skills">
-                <li>React</li>
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>Responsive Web Design</li>
-              </ul>
-              <p>Gallery/shop website for a London-based artist, made with React. Artwork can be browsed, filtered and purchased. Form submissions are handled by JavaScript and notifications are relayed to the artist.</p>
-              <p>The project started with discussions about the client's requirements and brainstorming sessions regarding the design and functionality. Subsequently, I created mockups of each page and iterated the designs based on the client's feedback, before writing the code.</p>
-              <p>The website is fully responsive and looks as good on a small phone as it does on a 4k desktop monitor. This was achieved using a mixture of CSS functions (min, max, clamp), responsive units (vw, vh, vmin) and the usual media queries.</p>
-            </div>
-            <div class="portfolio-item-buttons">
-              <a href="https://www.mattwritesart.co.uk" target="_blank" class="primary">Live Site</a>
-              <a href="https://github.com/AngusMacrae/mattwritesart" target="_blank" class="secondary">View Repo</a>
-            </div>
-          </article>
-
-          <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="images/portfolio/mind-garden-main.webp" alt="Screenshot of Mind Garden app" />
-              <h3>Mind Garden</h3>
-            </header>
-            <div class="portfolio-item-info flow">
-              <ul class="skills">
-                <li>PHP</li>
-                <li>PostgreSQL</li>
-                <li>Bootstrap</li>
-                <li>JavaScript</li>
-              </ul>
-              <p>A diary/notes website with a PHP and PostgreSQL backend that provides a login/signup system and a database of users and their saved content. Old entries can be changed and deleted, and any changes are automatically saved as the user types.</p>
-              <p>The front end was built with a mixture of Bootstrap and custom CSS.</p>
-              <p>Make your own account or log in with email address <span class="quote">example@example.com</span> and password <span class="quote">asdf</span> to see how it works.</p>
-              <p>
-                <strong> Note: Hosted on Heroku's free tier, so may be slow to load initially.</strong>
-              </p>
-            </div>
-            <div class="portfolio-item-buttons">
-              <a href="https://mind-garden.herokuapp.com/" target="_blank" class="primary">Live Site</a>
-              <a href="https://github.com/AngusMacrae/mind-garden" target="_blank" class="secondary">View Repo</a>
-            </div>
-          </article>
-
-          <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="images/portfolio/lift-sim.webp" alt="Screenshot of Lift Sim app" />
-              <h3>Lift Sim</h3>
-            </header>
-            <div class="portfolio-item-info flow">
-              <ul class="skills">
-                <li>JavaScript</li>
-                <li>Drag & Drop API</li>
-                <li>SASS</li>
-              </ul>
-              <p>A simulation of a lift serving a building of impatient passengers. The user can add passengers to different floors and watch as the lift follows an optimised path to deliver them all to their destinations.</p>
-              <p>This was built as an exercise in object-oriented vanilla JS, and makes use of the HMTL5 Drag & Drop API. Async functions and promises were used to chain operations.</p>
-              <p>
-                <strong> Note: Currently doesn't work on touchscreens.</strong>
-              </p>
-            </div>
-            <div class="portfolio-item-buttons">
-              <a href="https://lift-sim.netlify.app/" target="_blank" class="primary">Live Site</a>
-              <a href="https://github.com/AngusMacrae/lift-sim" target="_blank" class="secondary">View Repo</a>
-            </div>
-          </article>
-
-          <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="images/portfolio/solar-system-explorer.webp" alt="Screenshot of Solar System Explorer app" />
-              <h3>Solar System Explorer</h3>
-            </header>
-            <div class="portfolio-item-info flow">
-              <ul class="skills">
-                <li>Vue</li>
-                <li>SASS</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-              </ul>
-              <p>Explore the solar system! Full-stack app that provides an interactive animated model of our little corner of the galaxy in order to help users learn about the various planets and moons.</p>
-              <p>Vue and SASS were used for the frontend, while the backend API was made with Node/Express & MongoDB and hosted on Heroku.</p>
-              <p>
-                <strong> Note: This app is a work in progress. </strong>
-              </p>
-            </div>
-            <div class="portfolio-item-buttons">
-              <a href="https://solar-system-explorer.netlify.app/" target="_blank" class="primary">Live Site</a>
-              <a href="https://github.com/AngusMacrae/solar-system-explorer" target="_blank" class="secondary">View Repo</a>
-            </div>
-          </article>
-
-          <!-- <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="images/portfolio/weather-tokyo-cropped.webp" alt="Screenshot of What's the Weather app" />
-              <h3>What's the Weather?</h3>
-            </header>
-            <div class="portfolio-item-info flow">
-              <ul class="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>API</li>
-              </ul>
-              <p>An attractive weather checking app that uses the Fetch API to grab and display the current weather from OpenWeatherMap. The app also attempts to show a background image that depicts the user's searched location with weather conditions matching the current weather there.</p>
-              <p>Made using Javascript and custom CSS. The responsive layout was created with CSS Grid.</p>
-            </div>
-            <div class="portfolio-item-buttons">
-              <a href="https://whatstheweather2020.netlify.app/" target="_blank" class="primary">Live Site</a>
-              <a href="https://github.com/AngusMacrae/whats-the-weather" target="_blank" class="secondary">View Repo</a>
-            </div>
-          </article> -->
-
-          <!-- <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="" alt="Screenshot of Yuan House website">
-                    <h3>Yuan House</h3>
-                  </header>
-            <div class="portfolio-item-info flow">
-                    <ul class="skills">
-                        <li>CSS</li>
-                        <li>WordPress</li>
-                    </ul>
-                <p>A website I created for a Taipei curry restaurant using WordPress. I also added some
-                    tweaks using custom CSS and took care of the hosting and domain name registration.</p>
-            </div>
-                <div class="portfolio-item-buttons">
-                    <a href="" target="_blank" class="primary">Live Site</a>
-                </div>
-            </article> -->
-
-          <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="images/portfolio/hanzi-quest-graph.webp" alt="Screenshot of Hanzi Quest app" />
-              <h3>Hanzi Quest</h3>
-            </header>
-            <div class="portfolio-item-info flow">
-              <ul class="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Chart.js</li>
-              </ul>
-              <p>A tool for estimating how many Chinese characters the user knows. Built with custom CSS and vanilla Javascript and uses a custom implementation of the Elo skill rating algorithm. Chart.js was used for the results chart which is displayed after the test is complete.</p>
-              <p>If you don't know Chinese but you'd like to see how the test results are displayed, just hit the "yes" button a few times and then alternate yes/no. This will approximately simulate the answer profile of a real test attempt.</p>
-            </div>
-            <div class="portfolio-item-buttons">
-              <a href="https://hanzi-quest.netlify.app/" target="_blank" class="primary">Live Site</a>
-              <a href="https://github.com/AngusMacrae/hanzi-quest" target="_blank" class="secondary">View Repo</a>
-            </div>
-          </article>
-
-          <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="images/portfolio/bubble-it.webp" alt="Screenshot of Bubble It app" />
-              <h3>Bubble-it!</h3>
-            </header>
-            <div class="portfolio-item-info flow">
-              <ul class="skills">
-                <li>Vue</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Rough.js</li>
-              </ul>
-              <p>I'm a huge fan of bubble tea and love writing code, so I combined the two. Bubble-it is a widget for customising bubble tea orders.</p>
-              <p>Users can select the drink size, topping, sweetness etc and the image updates reactively to display their selected configuration.</p>
-              <p>The app was made with Vue, and SVGs were used to achieve the hand-sketched visual style.</p>
-            </div>
-            <div class="portfolio-item-buttons">
-              <a href="https://bubble-it.netlify.app/" target="_blank" class="primary">Live Site</a>
-              <a href="https://github.com/AngusMacrae/bubble-it-vue" target="_blank" class="secondary">View Repo</a>
-            </div>
-          </article>
-
-          <!-- <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="images/portfolio/seat-picker.webp" alt="Screenshot of Cinema Seat Picker app" />
-              <h3>Cinema Seat Picker</h3>
-            </header>
-            <div class="portfolio-item-info flow">
-              <ul class="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-
-              <p>A cinema seat selection widget made using Javascript. Local storage is used to preserve the user's seat selection.</p>
-            </div>
-            <div class="portfolio-item-buttons">
-              <a href="https://cinema-seat-picker.netlify.app/" target="_blank" class="primary">Live Site</a>
-              <a href="https://github.com/AngusMacrae/cinema-seat-picker" target="_blank" class="secondary">View Repo</a>
-            </div>
-          </article> -->
-
-          <!-- <article class="portfolio-item">
-            <header class="portfolio-item-header">
-              <img src="images/portfolio/insite-music.webp" alt="Screenshot of Insite Music website" />
-              <h3>Insite Music</h3>
-            </header>
-            <div class="portfolio-item-info flow">
-              <ul class="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              <p>A contact page I made for a London-based music PR startup. Built with custom HTML/CSS relying on Flexbox for the layout.</p>
-            </div>
-            <div class="portfolio-item-buttons">
-              <a href="https://insite-music.netlify.app/" target="_blank" class="primary">Live Site</a>
-              <a href="https://github.com/AngusMacrae/insite-music" target="_blank" class="secondary">View Repo</a>
-            </div>
-          </article> -->
-        </div>
-      </section>
-
-      <section id="contact" class="flow scroll-section">
-        <h2>#contact <span class="muted">me</span></h2>
-        <!-- <p>Do you need a website? I'd love to work with you, regardless of the nature and scope of your project. Just fill in the form below to get the ball rolling.</p>
-        <p>Alternatively, if you are a recruiter or company looking for a developer and you think I'd be a good fit, please also don't hesitate to get in touch. I will get back to you with a full CV via email.</p> -->
-        <p>If you'd like to get in touch with me for any reason, please use the form below. I'll get back to you as soon as I can!</p>
-        <form name="contact" method="post" data-netlify="true" class="contact-form">
-          <input type="text" name="name" required placeholder="Your name" />
-          <input type="email" name="email" required placeholder="Your email address" />
-          <textarea required rows="7" name="message" placeholder="What can I do for you?"></textarea>
-          <button type="submit">Send!</button>
-        </form>
-      </section>
-
-      <footer id="footer">
-        <small class="muted">Angus Macrae | 2022 | <a href="#">Back to the top</a></small>
-      </footer>
-    </div>
-
-    <div class="page-spacer-right">
-      <div></div>
-    </div>
+      </div>
+    </main>
   </body>
 </html>

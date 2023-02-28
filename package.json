@@ -1,10 +1,12 @@
 {
-  "name": "portfolio",
-  "version": "2.1.0",
-  "description": "Personal portfolio site",
+  "name": "angus-macrae",
+  "version": "3.0.0",
+  "description": "Angus Macrae's personal site",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch scss:css",
+    "build": "sass scss:css --no-source-map"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AngusMacrae/portfolio/issues"
   },
-  "homepage": "https://github.com/AngusMacrae/portfolio#readme"
+  "homepage": "https://github.com/AngusMacrae/portfolio#readme",
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
 }
